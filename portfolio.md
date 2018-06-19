@@ -1,8 +1,9 @@
 ---
 layout:    static_page
 permalink: /portfolio
+title:     "Portfolio"
 ---
-# Portfolio
+
 ## Projects
 <ul class="projects">
     {% include project_entry.html
