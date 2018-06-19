@@ -31,13 +31,14 @@ header {
         line-height: 1.5em;
         color: $dark;
         text-decoration: none;
-
+        font-weight: bold;
         &:hover { border-bottom: 3px solid $light; }
     }
 
     // Navigation on the right
     nav {
         position: absolute;
+        z-index: 1; // Make sure the menu appear on top of the tags.
         top: 0;
         right: 2em;
         transition: width .2s ease-in .5s, height .2s ease-in .5s, background 0s ease .7s;
@@ -137,7 +138,7 @@ article {
 
     h1, h2 {
         font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 700;
+        font-weight: bold;
         text-transform: uppercase;
     }
 
