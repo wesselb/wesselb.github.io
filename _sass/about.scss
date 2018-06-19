@@ -1,0 +1,63 @@
+article {
+    // The aside
+    aside {
+        // General display settings
+        display: block;
+        text-align: center;
+        margin: .5em 0 1em 2em;
+        padding: 0;
+        float: right;
+        width: 230px;
+
+        // Image of me
+        img {
+            width: 230px;
+            margin: 0;
+        }
+
+        // Links to various services
+        a {
+            display: inline-block;
+            height: 2em;
+            width: 2.5em;
+            background-size: 1.5em 1.5em;
+            background-position: .5em .25em;
+            background-repeat: no-repeat;
+            background-color: $dark;
+
+            &#cv {
+                background-image: url($baseurl + "/assets/images/icons8-cv-white.png");
+                &:hover {
+                    background-image: url($baseurl + "/assets/images/icons8-cv-blue.png");
+                }
+            }
+            &#mail {
+                background-image: url($baseurl + "/assets/images/icons8-mail-white.png");
+                &:hover {
+                    background-image: url($baseurl + "/assets/images/icons8-mail-blue.png");
+                }
+            }
+            &#scholar {
+                background-image: url($baseurl + "/assets/images/icons8-scholar-white.png");
+                &:hover {
+                    background-image: url($baseurl + "/assets/images/icons8-scholar-blue.png");
+                }
+            }
+            &#github {
+                background-image: url($baseurl + "/assets/images/icons8-github-white.png");
+                &:hover {
+                    background-image: url($baseurl + "/assets/images/icons8-github-blue.png");
+                }
+            }
+            &#linkedin {
+                background-image: url($baseurl + "/assets/images/icons8-linkedin-white.png");
+                &:hover {
+                    background-image: url($baseurl + "/assets/images/icons8-linkedin-blue.png");
+                }
+            }
+            &:hover {
+                background-color: $light;
+            }
+        }
+    }
+}

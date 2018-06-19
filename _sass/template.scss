@@ -1,0 +1,185 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $dark;
+    background: #fff;
+}
+
+// Main container that centers everything
+.centered {
+    max-width: calc(960px - 4em);
+    margin: 0 auto 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+// Header
+header {
+    height: 2.25em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-variant: small-caps;
+
+    &.centered {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    position: relative;
+
+    // The "W." on the left
+    #header_title {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: $dark;
+        text-decoration: none;
+
+        &:hover { border-bottom: 3px solid $light; }
+    }
+
+    // Navigation on the right
+    nav {
+        position: absolute;
+        top: 0;
+        right: 2em;
+        transition: width .2s ease-in .5s, height .2s ease-in .5s, background 0s ease .7s;
+        width: 2.25em;
+        direction: rtl;
+        text-align: right;
+        overflow: hidden;
+        height: 2.25em;
+
+        span {
+            direction: rtl;
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+            top: 0;
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                width: 11.5em;
+                font-size: 1.25em;
+                line-height: 1.8em;
+                height: 1.8em;
+                color: white;
+                text-align: left;
+                padding: 0 0 0 .5em;
+                font-weight: 400;
+                &:hover {
+                    background: $light;
+                    color: $dark;
+                }
+            }
+        }
+
+        a {
+            display: inline-block;
+
+            &#menu_button {
+                background: url(../images/icons8-menu-blue.png) no-repeat;
+                background-size: 1em 1em;
+                background-position: .625em .625em;
+                width: 2.25em;
+                height: 2.25em;
+                transition: background-image 0s ease .5s;
+            }
+        }
+
+        &:hover {
+            transition: width .2s ease-out, height .2s ease-out, background 0s;
+            background: $dark;
+            color: white;
+            width: 15em;
+            height: 11.25em;
+
+           #menu_button {
+                transition: background-image .2s ease;
+                background-image: url(../images/icons8-menu-white.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+    }
+}
+
+// Articles
+article {
+    line-height: 2em;
+    text-align: justify;
+
+    a {
+        color: $accent;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &>date {
+        margin-top: 1em;
+        color: $light;
+        display: block;
+    }
+
+    &>nav {
+        overflow: hidden;
+        .prev { float: left; }
+        .next { float: right; }
+    }
+
+    img {
+        width: 500px;
+        display: block;
+        margin: 1.5em auto 1.5em auto;
+        }
+
+    h1, h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.25em; }
+}
+
+
+// Footer
+footer {
+    &.centered {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    color: $light;
+    a {
+        color: $light;
+        text-decoration: underline;
+        &:hover {
+            color: $dark;
+        }
+    }
+}
+
+// Disqus thread
+#disqus_thread {
+    margin-top: 1em;
+}
+
+// Button that shows comments
+a.button {
+    background: #fff;
+    color: $light;
+    display: inline-block;
+    padding: 0 .5em 0 .5em;
+    border: 1px solid $light;
+    line-height: 1.5em;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    &:hover {
+        color: $dark;
+        background: $light;
+        text-decoration: none;
+    }
+}

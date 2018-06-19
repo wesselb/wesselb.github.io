@@ -1,0 +1,66 @@
+article {
+    // Styling of projects and publications
+    ul.projects, ul.publications {
+        list-style: none;
+        padding-left: 2em;
+
+        li {
+            &+li { margin-top: .5em; }
+
+            // Bullet
+            &:before {
+                content: "•";
+                display: inline-block;
+                position: absolute;
+                font-size: 1.5em;
+                line-height: 1.75em;
+                margin-left: -1em;
+                color: $dark;
+                transition: color .2s;
+            }
+            &:hover:before { color: $accent; }
+
+            // Correct spacing of paragraphs.
+            p {
+                padding: .125em .5em .125em 1.5em;
+                margin: 0;
+                text-indent: -1em;
+            }
+            p.title {
+                font-size: 1.2em;
+                padding: .104em .417em .104em 1.417em;
+
+                date {
+                    float: right;
+                    margin: 0 0 1em 2em;
+                    color: $light;
+                    transition: color .05s;
+                }
+            }
+
+            // Display settings and colour animation
+            &>a {
+                display: inline-block;
+                width: 100%;
+
+                text-decoration: none;
+                color: $dark;
+                transition: color .2s;
+                &:hover {
+                    color: #fff;
+                    transition: color .05s;
+                    p.title date {
+                        color: #fff;
+                        transition: color .2s;
+                    }
+                }
+            }
+
+            // Background animation
+            background-size: 200% 100%;
+            background-image: linear-gradient(to right, #fff 50%, $accent 50%, );
+            transition: background-position .2s;
+            &:hover { background-position: -100% 0; }
+        }
+    }
+}

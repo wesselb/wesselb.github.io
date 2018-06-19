@@ -1,0 +1,14 @@
+<li>
+    <a href="{{ include.file | prepend: "/assets/" | prepend:site.baseurl }}">
+        <p class="title">
+            {% if include.year %}
+                <date>{{ include.year }}</date>
+            {% endif %}
+            {{ include.title }}
+        </p>
+        <p>{{ include.authors }}</p>
+        {% if include.note %}
+            <p>{{ include.note }}</p>
+        {% endif %}
+    </a>
+</li>
