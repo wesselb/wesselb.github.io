@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: $dark;
     background: #fff;
 }
@@ -16,7 +17,7 @@ body {
 header {
     height: 2.25em;
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     font-variant: small-caps;
 
@@ -136,8 +137,8 @@ article {
 
     h1, h2 {
         font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
         text-transform: uppercase;
-        font-weight: bold;
     }
 
     h1 { font-size: 2em; }
@@ -176,6 +177,7 @@ a.button {
     line-height: 1.5em;
     text-decoration: none;
     font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
 
     &:hover {
         color: $dark;
