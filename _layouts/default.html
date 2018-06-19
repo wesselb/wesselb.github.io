@@ -5,7 +5,11 @@
         <!-- Header and menu: -->
         <header class="centered">
             <a href="{{ site.baseurl }}/" id="header_title">w.</a>
-            <nav><!--
+            <nav
+                id="menu"
+                onmouseover="menu_over()"
+                onmouseout="menu_out()"
+                onclick="menu_click()"><!--
                 --><a id="menu_button" href="#"></a><!--
                 --><span><!--
                     --><a href="{{ site.baseurl }}/">home</a><!--

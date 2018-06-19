@@ -46,6 +46,7 @@ header {
         text-align: right;
         overflow: hidden;
         height: 2.25em;
+        border-radius: 5px;
 
         span {
             direction: rtl;
@@ -81,13 +82,10 @@ header {
                 width: 2.25em;
                 height: 2.25em;
                 transition: background-image 0s ease .5s;
-                border: 1px solid red;
-                z-index: 1;
-                position: absolute;
             }
         }
 
-        &:hover {
+        &.mouseover {
             transition: width .2s ease-out, height .2s ease-out, background 0s;
             background: $dark;
             color: white;
@@ -107,7 +105,7 @@ header {
 // Articles
 article {
     line-height: 2em;
-    text-align: justify;
+    text-align: left;
 
     a {
         color: $accent;
@@ -130,10 +128,12 @@ article {
     }
 
     img {
-        width: 500px;
+        max-width: 100%;
+        height: auto;
+        width: auto\9;  // IE8
         display: block;
-        margin: 1.5em auto 1.5em auto;
-        }
+        margin: 2em auto 2em auto;
+    }
 
     h1, h2 {
         font-family: 'Roboto Condensed', sans-serif;
@@ -177,6 +177,7 @@ a.button {
     line-height: 1.5em;
     text-decoration: none;
     font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 5px;
 
     &:hover {
         color: $dark;

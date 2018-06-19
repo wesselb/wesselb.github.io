@@ -1,4 +1,4 @@
-window.onload = function() {
+function resolve_email() {
     var hrefs = document.getElementsByTagName('a');
     for (var i = 0; i < hrefs.length; i++) {
         if (hrefs[i].href == "mailto:my_email") {

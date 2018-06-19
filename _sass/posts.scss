@@ -49,17 +49,24 @@ article {
             text-decoration: none;
             color: $dark;
             display: block;
-            width: 100%;
+            width: calc(100% - 1em);
+            text-indent: -1em;
+            padding-left: 1em;
 
             date {
                 float: right;
                 color: $light;
+                margin-left: 2em;
             }
 
             &:hover, &:hover>date {
                 color: $accent;
                 text-decoration: underline;
             }
+        }
+
+        li + li {
+            margin-top: .5em;
         }
     }
 }

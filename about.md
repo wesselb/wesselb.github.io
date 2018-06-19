@@ -4,14 +4,14 @@ permalink: /about
 title:     "About"
 ---
 
-<aside>
-      <a href="mailto:my_email" id="mail"></a>
-      <a href="/assets/cv.pdf" id="cv"></a>
-      <a href="https:github.com/wesselb" id="github"></a>
-      <a href="https:scholar.google.co.uk/citations?user=QRQwz3cAAAAJ" id="scholar"></a>
-      <a href="https:linkedin.com/in/wessel-bruinsma" id="linkedin"></a>
-      <img alt="Wessel" src="{{ site.baseurl }}/assets/images/me.png">
-</aside>
+<aside><!--
+      --><a href="mailto:my_email" id="mail"></a><!--
+      --><a href="/assets/cv.pdf" id="cv"></a><!--
+      --><a href="https:github.com/wesselb" id="github"></a><!--
+      --><a href="https:scholar.google.co.uk/citations?user=QRQwz3cAAAAJ" id="scholar"></a><!--
+      --><a href="https:linkedin.com/in/wessel-bruinsma" id="linkedin"></a><!--
+      --><img alt="Wessel" src="{{ site.baseurl }}/assets/images/me.png"><!--
+--></aside>
 
 Hey, 👋🏼! My name is Wessel.
 I am a PhD student at the [Machine Learning Group](http://mlg.eng.cam.ac.uk/) at the University of Cambridge, supervised by [Dr Richard Turner](http://cbl.eng.cam.ac.uk/Public/Turner/Turner), and a member of Christ's College.
