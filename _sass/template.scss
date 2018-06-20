@@ -4,7 +4,7 @@ body {
     background: #fff;
 }
 
-// Main container that centers everything
+// Center stuff
 .centered {
     max-width: calc(960px - 4em);
     margin: 0 auto 0 auto;
@@ -26,7 +26,7 @@ header {
     position: relative;
 
     // The "W." on the left
-    #header_title {
+    #header-title {
         font-size: 1.5em;
         line-height: 1.5em;
         color: $dark;
@@ -35,7 +35,7 @@ header {
         &:hover { border-bottom: 3px solid $light; }
     }
 
-    // Navigation on the right
+    // Menu
     nav {
         position: absolute;
         z-index: 1; // Make sure the menu appear on top of the tags.
@@ -49,6 +49,7 @@ header {
         height: 2.25em;
         border-radius: 5px;
 
+        // Container of the menu entries
         span {
             direction: rtl;
             position: absolute;
@@ -57,6 +58,7 @@ header {
             top: 0;
             display: inline-block;
 
+            // Menu entry
             a {
                 text-decoration: none;
                 width: 11.5em;
@@ -76,7 +78,8 @@ header {
         a {
             display: inline-block;
 
-            &#menu_button {
+            // The burger menu button
+            &#menu-button {
                 background: url(../images/icons8-menu-blue.png) no-repeat;
                 background-size: 1em 1em;
                 background-position: .625em .625em;
@@ -86,6 +89,7 @@ header {
             }
         }
 
+        // This class is set dyamically
         &.mouseover {
             transition: width .2s ease-out, height .2s ease-out, background 0s;
             background: $dark;
@@ -103,7 +107,7 @@ header {
     }
 }
 
-// Articles
+// Article styling
 article {
     line-height: 2em;
     text-align: left;
@@ -128,12 +132,17 @@ article {
         .next { float: right; }
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        width: auto\9;  // IE8
-        display: block;
+    // Make images 500px wide, centered, and scale them down as needed
+    .image-container {
         margin: 2em auto 2em auto;
+        max-width: 500px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;  // IE8
+            display: block;
+        }
     }
 
     h1, h2 {
@@ -164,7 +173,7 @@ footer {
 }
 
 // Disqus thread
-#disqus_thread {
+#disqus-thread {
     margin-top: 1em;
 }
 

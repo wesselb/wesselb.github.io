@@ -65,8 +65,7 @@ article {
             }
         }
 
-        li + li {
-            margin-top: .5em;
-        }
+        // Spacing between subsequent entries.
+        li+li { margin-top: .5em; }
     }
 }

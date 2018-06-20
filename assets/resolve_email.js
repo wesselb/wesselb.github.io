@@ -1,3 +1,7 @@
+/**
+ * This function should be called upon loading to replace "my_email" with my
+ * actual email in href fields of <a>'s.
+ */
 function resolve_email() {
     var hrefs = document.getElementsByTagName('a');
     for (var i = 0; i < hrefs.length; i++) {
@@ -7,3 +11,5 @@ function resolve_email() {
         }
     }
 }
+
+$(document).ready(resolve_email)

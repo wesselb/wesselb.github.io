@@ -7,9 +7,9 @@ title:     "About"
 <aside><!--
       --><a href="mailto:my_email" id="mail"></a><!--
       --><a href="/assets/cv.pdf" id="cv"></a><!--
-      --><a href="https:github.com/wesselb" id="github"></a><!--
-      --><a href="https:scholar.google.co.uk/citations?user=QRQwz3cAAAAJ" id="scholar"></a><!--
-      --><a href="https:linkedin.com/in/wessel-bruinsma" id="linkedin"></a><!--
+      --><a href="https://github.com/wesselb" id="github"></a><!--
+      --><a href="https://scholar.google.co.uk/citations?user=QRQwz3cAAAAJ" id="scholar"></a><!--
+      --><a href="https://linkedin.com/in/wessel-bruinsma" id="linkedin"></a><!--
       --><img alt="Wessel" src="{{ site.baseurl }}/assets/images/me.png"><!--
 --></aside>
 
@@ -23,5 +23,7 @@ My curriculum vitae can be found [here](/assets/cv.pdf).
 
 My research interests include probabilistic modelling, with a focus on Gaussian processes, approximate inference, and signal processing.
 
-
-![In the end, we are all an approximation to a GP]({{ site.baseurl }}/assets/images/we-are-all-a-gp.jpg)
+{% include image.html
+    alt="In the end, we are all an approximation to a GP"
+    src="we-are-all-a-gp.jpg"
+%}

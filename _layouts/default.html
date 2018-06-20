@@ -2,15 +2,15 @@
 <html lang="en">
     {% include head.html %}
     <body>
-        <!-- Header and menu: -->
+        <!-- Header and menu -->
         <header class="centered">
-            <a href="{{ site.baseurl }}/" id="header_title">w.</a>
+            <a href="{{ site.baseurl }}/" id="header-title">w.</a>
             <nav
                 id="menu"
                 onmouseover="menu_over()"
                 onmouseout="menu_out()"
                 onclick="menu_click()"><!--
-                --><a id="menu_button" href="#"></a><!--
+                --><a id="menu-button" href="#"></a><!--
                 --><span><!--
                     --><a href="{{ site.baseurl }}/">home</a><!--
                     --><a href="{{ site.baseurl }}/posts-by-tag">posts by tag</a><!--
@@ -21,18 +21,20 @@
             --></nav>
         </header>
 
-        <!-- Content: -->
-        <article class="centered">
-            {{ content }}
-        </article>
+        <!-- Main content -->
+        <main class="centered">
+            <article>
+                {{ content }}
+            </article>
+        </main>
 
-        <!-- Footer: -->
+        <!-- Footer -->
         <footer class="centered">
             &copy; wesselb.github.io.
             Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
             Icons by <a href="https://icons8.com">Icons8</a>.
         </footer>
 
-        {% include google_analytics.html %}
+        {% include body_end.html %}
     </body>
 </html>

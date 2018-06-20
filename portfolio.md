@@ -5,7 +5,7 @@ title:     "Portfolio"
 ---
 
 ## Projects
-<ul class="projects">
+<ul class="portfolio-list">
     {% include project_entry.html
         title="Stheno"
         link="https://github.com/wesselb/stheno"
@@ -49,7 +49,7 @@ title:     "Portfolio"
 </ul>
 
 ## arXiv Submissions
-<ul class="publications">
+<ul class="portfolio-list">
     {% include publication_entry.html
         file="arxiv/bruinsma18.pdf"
         authors="Bruinsma, W. P. and Turner R. E."
@@ -67,7 +67,7 @@ title:     "Portfolio"
 </ul>
 
 ## Publications
-<ul class="publications">
+<ul class="portfolio-list">
     {% include publication_entry.html
         file="conference/bosma17.pdf"
         authors="Bosma, S., Bruinsma, W.P., Hes, R.P., Bentum, M.J., and Lager, I.E"
@@ -92,7 +92,7 @@ title:     "Portfolio"
 </ul>
 
 ## Theses
-<ul class="publications">
+<ul class="portfolio-list">
     {% include publication_entry.html
         file="theses/bruinsma16.pdf"
         authors="Bruinsma, W. P."
@@ -110,7 +110,7 @@ title:     "Portfolio"
 </ul>
 
 ## Talks
-<ul class="publications">
+<ul class="portfolio-list">
     {% include publication_entry.html
         file="talks/agreement.pdf"
         authors="Bruinsma, W. P."
@@ -129,7 +129,7 @@ title:     "Portfolio"
 </ul>
 
 ## Write-Ups
-<ul class="publications">
+<ul class="portfolio-list">
     {% include publication_entry.html
         file="write-ups/spike-slab.pdf"
         authors="Bruinsma, W. P."
