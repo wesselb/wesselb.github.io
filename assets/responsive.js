@@ -37,9 +37,9 @@ function menu_click() {
 function menu_fix() {
     if (Modernizr.touch) {
         // Bring the menu button to the top.
-        menu_button = document.getElementById("menu_button")
-        menu_button.style.zIndex = 1;
-        menu_button.style.position = "absolute";
+        menu_button = document.getElementById("menu-button")
+        menu_button.style.zIndex = 1
+        menu_button.style.position = "absolute"
 
         // Make animation instant.
         menu = document.getElementById("menu")
