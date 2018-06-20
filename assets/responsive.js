@@ -34,7 +34,7 @@ function menuToggle() {
  */
 function menuTouch() {
     $("#menu-button").css({
-        "z-index": 1,
+        "z-index": 4,  // Bring it above everything else.
         "position": "absolute",
         "transition": "background-image .2s"
     })

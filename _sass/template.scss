@@ -72,6 +72,9 @@ header {
                     background: $light;
                     color: $dark;
                 }
+
+                position: relative;
+                z-index: 3;
             }
         }
 
@@ -87,6 +90,9 @@ header {
                 width: 2.25em;
                 height: 2.25em;
                 transition: background-image 0s ease .5s;
+
+                position: relative;
+                z-index: 2;
 
                 // This class is set dyamically
                 &.mouseover {
