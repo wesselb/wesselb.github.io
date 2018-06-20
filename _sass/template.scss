@@ -80,12 +80,19 @@ header {
 
             // The burger menu button
             &#menu-button {
-                background: url(../images/icons8-menu-blue.png) no-repeat;
+                background-image: url(../images/icons8-menu-blue.png);
+                background-repeat: no-repeat;
                 background-size: 1em 1em;
                 background-position: .625em .625em;
                 width: 2.25em;
                 height: 2.25em;
                 transition: background-image 0s ease .5s;
+
+                // This class is set dyamically
+                &.mouseover {
+                    transition: background-image .2s ease;
+                    background-image: url(../images/icons8-menu-white.png);
+                }
             }
         }
 
@@ -96,12 +103,6 @@ header {
             color: white;
             width: 15em;
             height: 11.25em;
-
-           #menu_button {
-                transition: background-image .2s ease;
-                background-image: url(../images/icons8-menu-white.png);
-                background-repeat: no-repeat;
-            }
         }
 
     }
@@ -189,8 +190,8 @@ footer {
         background-size: 1em 1em;
         background-position: 0 .1em;
         background-repeat: no-repeat;
-        background-image: url($baseurl + "/assets/images/icons8-rss-grey.png");
-        &:hover { background-image: url($baseurl + "/assets/images/icons8-rss-blue.png"); }
+        background-image: url(../images/icons8-rss-grey.png);
+        &:hover { background-image: url(../images/icons8-rss-blue.png); }
     }
 }
 
