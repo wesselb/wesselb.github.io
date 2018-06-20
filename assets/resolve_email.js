@@ -2,7 +2,7 @@
  * This function should be called upon loading to replace "my_email" with my
  * actual email in href fields of <a>'s.
  */
-function resolve_email() {
+function resolveEmail() {
     var hrefs = document.getElementsByTagName('a');
     for (var i = 0; i < hrefs.length; i++) {
         if (hrefs[i].href == "mailto:my_email") {
@@ -12,4 +12,4 @@ function resolve_email() {
     }
 }
 
-$(document).ready(resolve_email)
+$(document).ready(resolveEmail)

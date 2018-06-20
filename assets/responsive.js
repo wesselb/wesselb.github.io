@@ -1,31 +1,50 @@
 /**
  * This function should be called when the mouse hovers over the menu.
  */
-function menu_over() {
+function menuOver() {
     if (!Modernizr.touch) {
-        document.getElementById("menu").className = "mouseover"
+        $("#menu").addClass("mouseover")
     }
 }
 
 /**
  * This function should be called when the mouse leaves the menu.
  */
-function menu_out() {
+function menuOut() {
     if (!Modernizr.touch) {
-        document.getElementById("menu").className = ""
+        $("#menu").removeClass("mouseover")
     }
 }
+
+var last_menu_click = (new Date()).getTime()  // Timestamp of last click
 
 /**
  * This function should be called when the user clicks the menu button.
  */
-function menu_click() {
+function menuClick() {
     if (Modernizr.touch) {
-        menu = document.getElementById("menu")
-        if (menu.className == "mouseover") {
-            menu.className = ""
+        // Record click time.
+        last_menu_click = (new Date()).getTime()
+
+        // Toggle menu.
+        if ($("#menu").hasClass("mouseover")) {
+            $("#menu").removeClass("mouseover")
         } else {
-            menu.className = "mouseover"
+            $("#menu").addClass("mouseover")
+        }
+    }
+}
+
+/**
+ * This function should be called whenever the user clicks anywhere. Since the
+ * body is a parent of the menu, this event should always come second.
+ */
+function menuDocumentClick() {
+    if (Modernizr.touch) {
+        // Close menu if clicked anywhere else.
+        ms_since_last_menu_click = (new Date()).getTime() - last_menu_click
+        if (ms_since_last_menu_click > 100) {
+            $("#menu").removeClass("mouseover")
         }
     }
 }
@@ -34,7 +53,7 @@ function menu_click() {
  * This function should be called upon loading to fix the menu for touchscreen
  * devices.
  */
-function menu_fix() {
+function menuFix() {
     if (Modernizr.touch) {
         // Bring the menu button to the top.
         menu_button = document.getElementById("menu-button")
@@ -47,4 +66,17 @@ function menu_fix() {
     }
 }
 
-$(document).ready(menu_fix)
+
+$(document).ready(function() {
+    // Load events.
+    $("#menu").mouseout(menuOut)
+    $("#menu").mouseover(menuOver)
+    $("#menu").click(menuClick)
+    $(document).click(menuDocumentClick)
+    //   Make it also work on touch devices.
+    $(document).on("click touchend", menuDocumentClick)
+
+    // Fix menu.
+    menuFix()
+})
+
