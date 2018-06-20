@@ -47,4 +47,4 @@ function menu_fix() {
     }
 }
 
-$(document).read(menu_fix)
+$(document).ready(menu_fix)
