@@ -22,6 +22,11 @@ title:     "Portfolio"
         description="A generic interface for linear algebra backends in Python"
     %}
     {% include project_entry.html
+        title="Causal Gaussian Process Convolution Model"
+        link="https://github.com/wesselb/cgpcm"
+        description="Implementation of the CGPCM in Python"
+    %}
+    {% include project_entry.html
         title="WBML"
         link="https://github.com/wesselb/WBML"
         description="A collection of machine learning algorithms"
