@@ -23,7 +23,7 @@ for source, dest in links.items():
 
 # Make links.
 for source, dest in links.items():
-    # Remove `dest`.
+    # Remove `dest` if it exists.
     if os.path.exists(dest):
         os.unlink(dest)
 
