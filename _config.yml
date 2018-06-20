@@ -7,6 +7,7 @@ github_usename:   wesselb
 google_analytics: UA-93527056-1
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 plugins:
     - jekyll-feed

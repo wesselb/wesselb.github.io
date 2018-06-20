@@ -153,6 +153,15 @@ article {
 
     h1 { font-size: 2em; }
     h2 { font-size: 1.25em; }
+
+
+    // Source highlighting
+    .highlight {
+        font-size: 0.9em;
+        padding: 1em;
+        border-radius: 5px;
+        line-height: 1.25em;
+    }
 }
 
 
@@ -169,6 +178,18 @@ footer {
         &:hover {
             color: $dark;
         }
+    }
+
+    // Feed button
+    #feed-button {
+        width: 1em;
+        height: 1em;
+        padding-left: 1.2em;
+        background-size: 1em 1em;
+        background-position: 0 .1em;
+        background-repeat: no-repeat;
+        background-image: url($baseurl + "/assets/images/icons8-rss-grey.png");
+        &:hover { background-image: url($baseurl + "/assets/images/icons8-rss-blue.png"); }
     }
 }
 
