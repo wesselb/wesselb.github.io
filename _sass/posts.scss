@@ -1,5 +1,8 @@
 article {
     .tags {
+        // Make spacing look consistent.
+        margin-bottom: 1.5em;
+
         // Tag itself
         .tag {
             background: $dark;
