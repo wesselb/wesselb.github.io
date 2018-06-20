@@ -1,3 +1,8 @@
+// Scale down the aside a bit on small screens.
+@media only screen and (max-width: 600px) {
+    article aside { font-size: 0.8em; }
+}
+
 article {
     // Image and buttons on the right
     aside {
@@ -7,9 +12,6 @@ article {
         padding: 0;
         float: right;
         width: 14.5em;
-
-        // Scale down a bit on small screens.
-        @media only screen and (max-width: 600px) { font-size: 0.8em; }
 
         // Image
         img {
