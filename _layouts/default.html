@@ -2,6 +2,9 @@
 <html lang="en">
     {% include head.html %}
     <body>
+        <!-- This input is here to make copying to clipboard work on iOS. -->
+        <input type="text" id="selection-dummy" style="display: none;" contenteditable="true" readonly="false">
+
         <!-- Header and menu -->
         <header class="centered">
             <a href="{{ site.baseurl }}/" id="header-title">w.</a>

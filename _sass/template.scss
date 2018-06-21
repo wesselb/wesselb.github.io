@@ -15,7 +15,7 @@ body {
 // Header
 header {
     height: 2.25em;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'roboto condensed', sans-serif;
     text-transform: uppercase;
     font-variant: small-caps;
 
@@ -128,12 +128,13 @@ article {
     }
 
     &>date {
-        margin-top: 1em;
+        margin-top: 2em;
         color: $light;
         display: block;
     }
 
     &>nav {
+        margin-top: 2em;
         overflow: hidden;
         .prev { float: left; }
         .next { float: right; }
@@ -158,8 +159,15 @@ article {
         text-transform: uppercase;
     }
 
+    // Set font sizes of headings.
     h1 { font-size: 2em; }
     h2 { font-size: 1.25em; }
+
+    // Increase spacing above each heading.
+    h2 { margin-top: 2em; }
+
+    // Dont increase spacing for the first heading.
+    p.tags + h2 { margin-top: 0; }
 
 
     // Source highlighting
@@ -168,6 +176,67 @@ article {
         padding: 1em;
         border-radius: 5px;
         line-height: 1.25em;
+    }
+
+    // Share icons
+    h1, h2 {
+        // Increase width of header by 1.5em past 100%.
+        position: relative;
+        left: -25px;
+        width: calc(100% + 25px);
+        padding-left: 25px;
+
+        // Link icon
+        .link, .ok {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 0 0;
+        }
+        .link { background-image: url(../images/icons8-link-grey.png); }
+        .ok {
+            top: -20px;
+            background-image: url(../images/icons8-ok.png);
+            opacity: 0;
+        }
+
+        // Make blue on hover.
+        &:hover {
+            cursor: pointer;
+            .link { background-image: url(../images/icons8-link-blue.png); }
+        }
+    }
+
+    // Code panes, colours from Solarized Light theme
+    .code-panes {
+        margin-bottom: -1em;
+
+        // Pane buttons
+        a {
+            font-family: 'roboto condensed', sans-serif;
+            text-transform: lowercase;
+            text-decoration: none;
+            color: $light;
+            display: inline-block;
+            padding: 0 1em 0 1em;
+            background-color: #fdf6e3;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+
+            // Spacing between buttons
+            &+a { margin-left: .5em; }
+
+            // Selection effect
+            &:hover, &.selected {
+                cursor: pointer;
+                color: $dark;
+                color: #586e75;
+            }
+        }
     }
 }
 
