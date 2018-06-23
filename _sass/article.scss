@@ -54,8 +54,8 @@ article {
     // Increase spacing above each heading.
     h2 { margin-top: 2em; }
 
-    // Dont increase spacing for the first heading.
-    p.tags + h2 { margin-top: 0; }
+    // If the post doesnt start with a header, increase spacing after tags.
+    .tags + p { margin-top: 2em; }
 
     // Source highlighting
     .highlight {
@@ -140,6 +140,10 @@ article {
         }
     }
 
+    // Fix spacing in lists
+    ul p, ol p {
+        margin: 0;
+    }
 }
 
 // Disqus thread
