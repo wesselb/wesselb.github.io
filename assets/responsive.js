@@ -58,9 +58,15 @@ $(document).ready(function() {
 
         // Close menu if touched anywhere else.
         $(document).on("click touchend", function() {
-            if ((new Date()).getTime() - menu_last_click > 100) {
-                menuClose()
-            }
+            // This event will trigger before the menu click event, so
+            // close with a timer, and check whether the menu event triggered
+            // recently.
+            setTimeout(function() {
+                if ((new Date()).getTime() - menu_last_click > 100) {
+                    // Menu event did not trigger recently. Close.
+                    menuClose()
+                }
+            }, 50)
         })
     } else {
         // Simply toggle menu via hover.
