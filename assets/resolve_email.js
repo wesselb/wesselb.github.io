@@ -12,4 +12,5 @@ function resolveEmail() {
     }
 }
 
+
 $(document).ready(resolveEmail)

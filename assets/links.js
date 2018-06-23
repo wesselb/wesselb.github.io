@@ -9,6 +9,7 @@ function copyText(text) {
     }
 }
 
+
 /**
  * Copy text to clipboard on iOS.
  */
@@ -37,6 +38,7 @@ function copyTextIOS(text) {
     el.style.display = "none"
 }
 
+
 /**
  * Copy text to clipboard. Default implementation.
  */
@@ -57,6 +59,7 @@ function copyTextDefault(text) {
     // Clean up DOM.
     document.body.removeChild(el)
 }
+
 
 /**
  * Share a link.
@@ -104,6 +107,7 @@ function createLinkAndOK(el) {
 
     return ok
 }
+
 
 $(document).ready(function() {
     $("h1").each(function(i, el) {

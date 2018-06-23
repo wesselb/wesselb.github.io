@@ -8,6 +8,7 @@ function showPane(panes, i) {
     $(panes[i]).css("display", "block")
 }
 
+
 /**
  * Highlight a button.
  */
@@ -17,6 +18,7 @@ function highlightButton(buttons, i) {
     })
     $(buttons[i]).addClass("selected")
 }
+
 
 /**
  * Create a menu button for code panes.
@@ -30,6 +32,7 @@ function createButton(panes, langs, i) {
     return button
 }
 
+
 /**
  * Attach the highlighting effects to a menu button.
  */
@@ -38,6 +41,7 @@ function attachButtonHighlighter(buttons, i) {
         highlightButton(buttons, i)
     })
 }
+
 
 /**
  * Get the language of a block of code.
@@ -51,6 +55,7 @@ function getLang(el) {
     })
     return lang
 }
+
 
 /**
  * Turn a list of blocks of codes into panes.
@@ -84,12 +89,14 @@ function makePanes(panes) {
     highlightButton(buttons, 0)
 }
 
+
 /**
  * Check whether two blocks are subsequent in the DOM.
  */
 function subsequent(block1, block2) {
     return block1.next().attr("blockID") == block2.attr("blockID")
 }
+
 
 $(document).ready(function() {
     // Extract all blocks from the page.
