@@ -93,7 +93,7 @@ function subsequent(block1, block2) {
 
 $(document).ready(function() {
     // Extract all blocks from the page.
-    blocks = Array.from($("div.highlighter-rouge")).map($)
+    blocks = Array.from($("div.highlighter-rouge"), $)
 
     // Give unique IDs to the blocks for detection of subsequent blocks.
     blockID = 0
@@ -116,5 +116,8 @@ $(document).ready(function() {
     subsequents.push(sequence)
 
     // Turn the subsequent sequences into panes.
-    subsequents.forEach(makePanes)
+    subsequents.forEach(function(panes) {
+        if (panes.length > 1)
+            makePanes(panes)
+    })
 })
