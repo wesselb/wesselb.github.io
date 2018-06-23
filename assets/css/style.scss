@@ -16,6 +16,7 @@ $baseurl: "{{ site.baseurl }}";
 @charset "utf-8";
 
 @import "template";
+@import "article";
 @import "posts";
 @import "portfolio";
 @import "about";
