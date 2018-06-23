@@ -2,26 +2,32 @@
  * Copy text to clipboard.
  */
 function copyText(text) {
+    if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+        copyTextIOS(text)
+    } else {
+        copyTextDefault(text)
+    }
+}
+
+/**
+ * Copy text to clipboard on iOS.
+ */
+function copyTextIOS(text) {
     // Set the value of the dummy input to `text`.
     var el = document.getElementById("selection-dummy")
     el.value = text
 
-    // Handle iOS as a special case.
-    if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-        // Create range.
-        range = document.createRange();
-        range.selectNodeContents(el);
+    // Create range.
+    range = document.createRange();
+    range.selectNodeContents(el);
 
-        // Create selection.
-        selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
+    // Create selection.
+    selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
 
-        // Perform the selection.
-        el.setSelectionRange(0, 999999);
-    } else {
-        el.select()
-    }
+    // Perform the selection.
+    el.setSelectionRange(0, 999999);
 
     // Attempt to copy text, temporarily showing the dummy.
     el.style.display = "block"
@@ -29,6 +35,27 @@ function copyText(text) {
         alert("Sorry, could not copy link. :(")
     }
     el.style.display = "none"
+}
+
+/**
+ * Copy text to clipboard. Default implementation.
+ */
+function copyTextDefault(text) {
+    // Create an input element.
+    var el = document.createElement("input")
+    el.value = text
+    document.body.appendChild(el)
+
+    // Select its contents.
+    el.select()
+
+    // Attempt to copy text.
+    if (!document.execCommand("copy")) {
+        alert("Sorry, could not copy link. :(")
+    }
+
+    // Clean up DOM.
+    document.body.removeChild(el)
 }
 
 /**
