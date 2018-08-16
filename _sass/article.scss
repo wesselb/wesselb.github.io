@@ -64,7 +64,11 @@ article {
     .tags + p { margin-top: 2em; }
 
     // Source highlighting
-    .highlight {
+    div.highlight {
+        padding: 0;
+        margin: 0;
+    }
+    pre.highlight {
         font-size: 0.9em;
         padding: 1em;
         border-radius: 5px;
