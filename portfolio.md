@@ -14,7 +14,7 @@ title:     "Portfolio"
     {% include project_entry.html
         title="Plum"
         link="https://github.com/wesselb/plum"
-        description="Multiple Dispatch in Python"
+        description="Multiple dispatch in Python"
     %}
     {% include project_entry.html
         title="LAB"

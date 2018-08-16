@@ -27,16 +27,22 @@ article {
         .next { float: right; }
     }
 
-    // Make images 500px wide, centered, and scale them down as needed.
+    // Make images 700px wide, centered, and scale them down as needed.
     .image-container {
         margin: 2em auto 2em auto;
-        max-width: 500px;
+        max-width: 800px;
+        text-align: center;
 
         img {
             max-width: 100%;
             height: auto;
             width: auto\9;  // IE8
             display: block;
+            margin: 0 auto 0 auto;
+        }
+
+        .caption {
+            margin-top: 1em;
         }
     }
 
@@ -63,6 +69,8 @@ article {
         padding: 1em;
         border-radius: 5px;
         line-height: 1.25em;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 
     // Share icons
@@ -100,7 +108,8 @@ article {
 
     // Code panes, colours from Solarized Light theme
     .code-panes {
-        margin-bottom: calc(-1em + 1px);
+        margin-bottom: calc(-2em + 2px);
+        margin-top: 2em;
 
         // Pane buttons
         a {
@@ -143,6 +152,31 @@ article {
     // Fix spacing in lists
     ul p, ol p {
         margin: 0;
+    }
+
+
+    // Tables
+    table {
+        margin: 2em auto 0 auto;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+
+        th { border-bottom: 1px solid black; }
+
+        th, td {
+            &:first-of-type { padding-left: .5em; }
+            &:last-of-type { padding-right: .5em; }
+        }
+
+        td + td, th + th {
+            padding-left: 1em;
+        }
+    }
+
+    .table-caption {
+        margin-top: 1em;
+        text-align: center;
+        margin-bottom: 2em;
     }
 }
 

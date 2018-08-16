@@ -1,0 +1,23 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\usetikzlibrary{arrows.meta,decorations.pathreplacing}
+
+\tikzset{
+    line/.style={
+        thick
+    },
+    arrow/.style={
+        line,
+        ->,
+        > = {
+            Triangle[length=2.0mm, width=2.0mm]
+        }
+    }
+}
+
+% Switch to Sans Serif font.
+\renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\wedge}{$\vphantom{\big|}$}

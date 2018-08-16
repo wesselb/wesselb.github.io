@@ -1,6 +1,9 @@
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         TeX: {
+            equationNumbers: {
+                autoNumber: "all"
+            },
             Macros: {
                 R: '\\mathbb{R}',
                 C: '\\mathbb{C}',
@@ -8,7 +11,10 @@
                 pd: '\\partial',
                 cond: '\\,|\\,',
                 ll: '\\left\\langle',
-                rr: '\\right\\rangle'
+                rr: '\\right\\rangle',
+                fp: '\\operatorname{fp}',
+                e: '\\varepsilon',
+                code: ['{\\small \\texttt{#1}}', 1]
             }
         }
     });
