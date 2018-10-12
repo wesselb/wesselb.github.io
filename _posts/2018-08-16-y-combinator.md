@@ -22,8 +22,9 @@ Cool!
 For readers unfamiliar with the above notation, the right-hand side of Equation \eqref{eq:Y-combinator} is a _lambda term_, which is a valid expression in [_lambda calculus_](https://en.wikipedia.org/wiki/Lambda_calculus):
 
 1. $$x$$, a variable, is a lambda term;
-2. if $$t$$ is a lambda term, then the anonymous function $$\lambda\, x : t$$ is a lambda term; and finally, 
-3. if $$s$$ and $$t$$ are lambda terms, then $$s\, t$$ is a lambda term, which should be interpreted as $$s$$ applied with argument $$t$$.
+2. if $$t$$ is a lambda term, then the anonymous function $$\lambda\, x : t$$ is a lambda term; 
+3. if $$s$$ and $$t$$ are lambda terms, then $$s\, t$$ is a lambda term, which should be interpreted as $$s$$ applied with argument $$t$$; and
+4. nothing else is a lambda term.
 
 For example, if we apply $$\lambda\, x : y\,x$$ to $$z$$, we find
 
@@ -174,7 +175,7 @@ We proceed as before and pull out $$f$$ and $$g$$:
     = h_g\, f\, g.
 \end{align}
 
-Now---here's that trick again---let $$f = \hat{f}\,\hat{f}\,\hat{g}$$ and $$\hat{g} = \hat{g}\,\hat{f}\,\hat{g}$$.[^1]
+Now---here's that trick again---let $$f = \hat{f}\,\hat{f}\,\hat{g}$$ and $$g = \hat{g}\,\hat{f}\,\hat{g}$$.[^1]
 Then
 
 \begin{align} 
@@ -302,7 +303,7 @@ Sweet success!
 
 ## Summary
 To recapitulate, the Y combinator is a higher-order function that can be used to define recursion---and even mutual recursion---in languages that don't support recursion.
-One way to derive $$Y$$ is to assume that the recursive function under consideration $$f$$ is the result of some other function $$\hat{f}$$ applied to itself: 
+One way of deriving $$Y$$ is to assume that the recursive function under consideration $$f$$ is the result of some other function $$\hat{f}$$ applied to itself: 
 $$f = \hat{f}\,\hat{f}$$;
 after some simple manipulation, the result can then be determined by inspection.
 Although $$Y$$ can indeed be used to define recursive functions, it cannot be applied literally in a contemporary programming language; recursion errors might then occur.
