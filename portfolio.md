@@ -133,6 +133,17 @@ title:     "Portfolio"
     %}
 </ul>
 
+## Posters
+<ul class="portfolio-list">
+    {% include publication_entry.html
+        file="posters/probprog18.pdf"
+        authors="Tebbutt, W. C., Bruinsma, W. P., and Turner R. E."
+        title="Gaussian Process Probabilistic Programming"
+        year="2018"
+        note="Probabilistic Programming (ProbProg 2018), The International Conference on"
+    %}
+</ul>
+
 ## Write-Ups
 <ul class="portfolio-list">
     {% include publication_entry.html
