@@ -6,6 +6,9 @@ tags:        [computer science, python]
 comments:    true
 ---
 
+{: .pretitle}
+Cross-posted at [https://invenia.github.io/blog/2018/08/20/ycombinator/](https://invenia.github.io/blog/2018/08/20/ycombinator/).
+
 ## Introduction
 This post is a short note on the notorious _Y combinator_.
 No, not [that company](https://ycombinator.com), but the computer sciency objects that looks like this:

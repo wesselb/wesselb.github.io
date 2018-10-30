@@ -117,6 +117,11 @@ title:     "Portfolio"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="talks/serum.pdf"
+        authors="Bruinsma, W. P."
+        title="A Bayesian Truth Serum"
+    %}
+    {% include publication_entry.html
         file="talks/agreement.pdf"
         authors="Bruinsma, W. P."
         title="Agreeing to Disagree"
@@ -146,6 +151,11 @@ title:     "Portfolio"
 
 ## Write-Ups
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="write-ups/serum.pdf"
+        authors="Bruinsma, W. P."
+        title="A Bayesian Truth Serum"
+    %}
     {% include publication_entry.html
         file="write-ups/spike-slab.pdf"
         authors="Bruinsma, W. P."
