@@ -34,7 +34,7 @@ title:     "Portfolio"
     {% include project_entry.html
         title="Varz"
         link="https://github.com/wesselb/varz"
-        description="Painless variables in PyTorch and TensorFlow"
+        description="Painless optimisation of constrained convariables in PyTorch, and TensorFlow, and AutoGrad"
     %}
     {% include project_entry.html
         title="Gaussian Process Autoregressive Regression Model"
@@ -60,17 +60,6 @@ title:     "Portfolio"
         title="wesselb.github.io"
         link="https://github.com/wesselb/wesselb.github.io"
         description="This website"
-    %}
-</ul>
-
-## arXiv Submissions
-<ul class="portfolio-list">
-    {% include publication_entry.html
-        file="arxiv/bruinsma18.pdf"
-        authors="Bruinsma, W. P. and Turner, R. E."
-        year="2018"
-        title="Learning Causally Generated Stationary Time Series"
-        note="arXiv:1802.08167"
     %}
 </ul>
 
@@ -106,6 +95,17 @@ title:     "Portfolio"
     %}
 </ul>
 
+## arXiv Submissions
+<ul class="portfolio-list">
+    {% include publication_entry.html
+        file="arxiv/bruinsma18.pdf"
+        authors="Bruinsma, W. P. and Turner, R. E."
+        year="2018"
+        title="Learning Causally Generated Stationary Time Series"
+        note="arXiv:1802.08167"
+    %}
+</ul>
+
 ## Posters
 <ul class="portfolio-list">
     {% include publication_entry.html
@@ -137,6 +137,11 @@ title:     "Portfolio"
 
 ## Talks
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="talks/orthogonal-bases-mogps.pdf"
+        authors="Bruinsma, W. P."
+        title="Orthogonal Bases for Multi-Output Gaussian Processes"
+    %}
     {% include publication_entry.html
         file="talks/spectral-methods-spectrum-estimation.pdf"
         authors="Requeima J. R., and Bruinsma, W. P."
