@@ -4,13 +4,27 @@ permalink: /portfolio
 title:     "Portfolio"
 ---
 
-## Projects
+## Machine Learning Projects
 <ul class="portfolio-list">
     {% include project_entry.html
         title="Stheno"
         link="https://github.com/wesselb/stheno"
         description="Gaussian process modelling in Python"
     %}
+    {% include project_entry.html
+        title="Gaussian Process Autoregressive Regression Model"
+        link="https://github.com/wesselb/gpar"
+        description="Implementation of GPAR in Python"
+    %}
+    {% include project_entry.html
+        title="Orthogonal Linear Mixing Model"
+        link="https://github.com/wesselb/olmm"
+        description="Implementation of the Orthogonal Linear Mixing Model in Python"
+    %}
+</ul>
+
+## Projects
+<ul class="portfolio-list">
     {% include project_entry.html
         title="Plum"
         link="https://github.com/wesselb/plum"
@@ -37,14 +51,14 @@ title:     "Portfolio"
         description="Painless optimisation of constrained convariables in PyTorch, and TensorFlow, and AutoGrad"
     %}
     {% include project_entry.html
-        title="Gaussian Process Autoregressive Regression Model"
-        link="https://github.com/wesselb/gpar"
-        description="Implementation of GPAR in Python"
+        title="Matrix"
+        link="https://github.com/wesselb/matrix"
+        description="Structured matrices in Python"
     %}
     {% include project_entry.html
-        title="Causal Gaussian Process Convolution Model"
-        link="https://github.com/wesselb/cgpcm"
-        description="Implementation of the CGPCM in Python"
+        title="Algebra"
+        link="https://github.com/wesselb/algebra"
+        description="Algebraic structures in Python"
     %}
     {% include project_entry.html
         title="WBML"
@@ -66,28 +80,42 @@ title:     "Portfolio"
 ## Publications
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="conference/requeima19.pdf"
+        file="publications/Gordon, 2019, Convolutional Conditional Neural Processes.pdf"
+        authors="Gordon, J., Bruinsma W. P., Foong, A. Y. K., Requeima, J., Dubois Y., and Turner R. E."
+        year="2019"
+        title="Convolutional Conditional Neural Processes"
+        note="International Conference on Learning Representations (ICLR), 8th"
+    %}
+    {% include publication_entry.html
+        file="publications/Berkovich, 2019, GP-ALPS, Automatic Latent Process Selection for Multi-Output Gaussian Process Models.pdf"
+        authors="Berkovich B., Perim, E., and Bruinsma, W. P."
+        year="2019"
+        title="GP-ALPS: Automatic Latent Process Selection for Multi-Output Gaussian Process Models"
+        note="Advanced in Approximate Bayesian Inference (AABI), 2nd Symposium on"
+    %}
+    {% include publication_entry.html
+        file="publications/Requeima, 2019, The Gaussian Process Autoregressive Regression Model (GPAR).pdf"
         authors="Requeima, J., Tebbutt W. C., Bruinsma, W. P., and Turner R. E."
         year="2019"
         title="The Gaussian Process Autoregressive Model (GPAR)"
         note="Artificial Intelligence and Statistics (AISTATS), 22nd International Conference on"
     %}
     {% include publication_entry.html
-        file="conference/bosma17.pdf"
+        file="publications/Bosma, 2017, Grating Lobes Prediction in 3D Array Antennas.pdf"
         authors="Bosma, S., Bruinsma, W. P., Hes, R. P., Bentum, M. J., and Lager, I. E."
         year="2017"
         title="Grating Lobe Prediction in 3D Array Antennas"
         note="Antennas and Propagation (EuCAP), 11th European Conference on"
     %}
     {% include publication_entry.html
-        file="conference/bruinsma16.pdf"
+        file="publications/Bruinsma, 2016, Radiation Properties of Moving Constellations of Satellites.pdf"
         authors="Bruinsma, W. P., Hes, R. P., Bosma, S., Lager, I. E., and Bentum, M. J."
         year="2016"
         title="Radiation Properties of Moving Constellations of (Nano) Satellites: A Complexity Study"
         note="Antennas and Propagation (EuCAP), 10th European Conference on"
     %}
     {% include publication_entry.html
-        file="conference/lager15.pdf"
+        file="publications/Lager, 2015, Beamforming in Sparse, Random, 3D Array Antennas with Fluctuating Element Locations.pdf"
         authors="Bentum, M. J., Lager, I. E., Bosma, S., Bruinsma, W. P., and Hes, R. P."
         year="2015"
         title="Beamforming in Sparse, Random, 3D Array Antennas with Fluctuating Element Locations"
@@ -98,7 +126,14 @@ title:     "Portfolio"
 ## arXiv Submissions
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="arxiv/bruinsma18.pdf"
+        file="arxiv/Bruinsma, 2019, Scalable Exact Inference in Multi-Output Gaussian Processes.pdf"
+        authors="Bruinsma, W. P., Perim, E., Tebbutt, W., Hosking, J. S., Solin, A., and Turner, R. E."
+        year="2019"
+        title="Exact Scalable Inference in Multi-Output Gaussian Processes"
+        note="arXiv:1911.06287"
+    %}
+    {% include publication_entry.html
+        file="arxiv/Bruinsma, 2018, Learning Causally-Generated Stationary Time Series.pdf"
         authors="Bruinsma, W. P. and Turner, R. E."
         year="2018"
         title="Learning Causally Generated Stationary Time Series"
@@ -109,7 +144,7 @@ title:     "Portfolio"
 ## Posters
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="posters/probprog18.pdf"
+        file="posters/Tebbutt, 2019, (Poster) Gaussian Process Probabilistic Programming.pdf"
         authors="Tebbutt, W. C., Bruinsma, W. P., and Turner R. E."
         title="Gaussian Process Probabilistic Programming"
         year="2018"
@@ -120,14 +155,14 @@ title:     "Portfolio"
 ## Theses
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="theses/bruinsma16.pdf"
+        file="theses/Bruinsma, 2016, (Thesis) The Generalised Gaussian Process Convolution Model.pdf"
         authors="Bruinsma, W. P."
         year="2016"
         title="The Generalised Gaussian Process Convolution Model"
         note="Department of Engineering, University of Cambridge. Thesis for the degree Master of Philosophy."
     %}
     {% include publication_entry.html
-        file="theses/bruinsma15.pdf"
+        file="theses/Bruinsma, 2015, (Thesis) An Extensible Toolkit For Real-Time High-Performance Wideband Spectrum Sensing.pdf"
         authors="Bruinsma, W. P., Hes, R. P., Kroep, H. J. C., Leliveld, T. C., Melching, W. M., and aan de Wiel, T. A."
         year="2015"
         title="An Extensible Toolkit for Real-Time High-Performance Wideband Spectrum Sensing"
@@ -138,42 +173,42 @@ title:     "Portfolio"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="talks/orthogonal-bases-mogps.pdf"
+        file="talks/Bruinsma, Orthogonal Bases for Multi-Output Gaussian Processes (Handout).pdf"
         authors="Bruinsma, W. P."
         title="Orthogonal Bases for Multi-Output Gaussian Processes"
     %}
     {% include publication_entry.html
-        file="talks/spectral-methods-spectrum-estimation.pdf"
+        file="talks/Bruinsma, Topic 4, Spectrum Estimation.pdf"
         authors="Requeima J. R., and Bruinsma, W. P."
         title="Spectral Methods in Gaussian Modelling: Spectrum Estimation"
     %}
     {% include publication_entry.html
-        file="talks/spectral-methods-variational-inference.pdf"
+        file="talks/Bruinsma, Topic 3, Variational Inference.pdf"
         authors="Requeima J. R., and Bruinsma, W. P."
         title="Spectral Methods in Gaussian Modelling: Variational Inference"
     %}
     {% include publication_entry.html
-        file="talks/spectral-methods-kernel-design.pdf"
+        file="talks/Bruinsma, Topic 2, Kernel Design.pdf"
         authors="Requeima J. R., and Bruinsma, W. P."
         title="Spectral Methods in Gaussian Modelling: Kernel Design"
     %}
     {% include publication_entry.html
-        file="talks/serum.pdf"
+        file="talks/Bruinsma, A Bayesian Truth Serum.pdf"
         authors="Bruinsma, W. P."
         title="A Bayesian Truth Serum"
     %}
     {% include publication_entry.html
-        file="talks/agreement.pdf"
+        file="talks/Bruinsma, Agreeing to Disagree.pdf"
         authors="Bruinsma, W. P."
         title="Agreeing to Disagree"
     %}
     {% include publication_entry.html
-        file="talks/gpcm.pdf"
+        file="talks/Bruinsma, GPCM.pdf"
         authors="Bruinsma, W. P."
         title="The Gaussian Process Convolution Model"
     %}
     {% include publication_entry.html
-        file="talks/reasoning-about-the-world.pdf"
+        file="talks/Bruinsma, Reasoning About The World.pdf"
         authors="Bruinsma, W. P."
         title="Reasoning About the World"
     %}
@@ -182,22 +217,22 @@ title:     "Portfolio"
 ## Write-Ups
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="write-ups/spectral-methods.pdf"
+        file="write-ups/Requeima, Spectral Methods in Gaussian Modelling.pdf"
         authors="Requeima J. R., and Bruinsma W. P."
         title="Spectral Methods in Gaussian Modelling"
     %}
     {% include publication_entry.html
-        file="write-ups/serum.pdf"
+        file="write-ups/Bruinsma, A Bayesian Truth Serum.pdf"
         authors="Bruinsma, W. P."
         title="A Bayesian Truth Serum"
     %}
     {% include publication_entry.html
-        file="write-ups/spike-slab.pdf"
+        file="write-ups/Bruinsma, Spike and Slab Priors.pdf"
         authors="Bruinsma, W. P."
         title="Spike and Slab Priors"
     %}
     {% include publication_entry.html
-        file="write-ups/agreement.pdf"
+        file="write-ups/Bruinsma, Agreeing to Disagree.pdf"
         authors="Bruinsma, W. P."
         title="Agreeing to Disagree"
     %}
