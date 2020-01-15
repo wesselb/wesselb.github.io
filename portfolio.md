@@ -19,7 +19,17 @@ title:     "Portfolio"
     {% include project_entry.html
         title="Orthogonal Linear Mixing Model"
         link="https://github.com/wesselb/olmm"
-        description="Implementation of the Orthogonal Linear Mixing Model in Python"
+        description="Implementation of the OLMM in Python"
+    %}
+    {% include project_entry.html
+        title="GPAR-OLMM"
+        link="https://github.com/wesselb/gpar-olmm"
+        description="Implementation of GPAR-OLMM in Python"
+    %}
+    {% include project_entry.html
+        title="Convolutional Conditional Neural Processes"
+        link="https://github.com/wesselb/convcnp"
+        description="Implementation of ConvCNP in Python"
     %}
 </ul>
 
