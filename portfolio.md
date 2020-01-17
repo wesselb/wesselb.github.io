@@ -28,7 +28,7 @@ title:     "Portfolio"
     %}
     {% include project_entry.html
         title="Convolutional Conditional Neural Processes"
-        link="https://github.com/wesselb/convcnp"
+        link="https://github.com/cambridge-mlg/convcnp"
         description="Implementation of ConvCNP in Python"
     %}
 </ul>
@@ -90,9 +90,9 @@ title:     "Portfolio"
 ## Publications
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="publications/Gordon, 2019, Convolutional Conditional Neural Processes.pdf"
+        file="publications/Gordon, 2020, Convolutional Conditional Neural Processes.pdf"
         authors="Gordon, J., Bruinsma W. P., Foong, A. Y. K., Requeima, J., Dubois Y., and Turner R. E."
-        year="2019"
+        year="2020"
         title="Convolutional Conditional Neural Processes"
         note="International Conference on Learning Representations (ICLR), 8th"
     %}
