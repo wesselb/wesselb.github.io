@@ -17,19 +17,29 @@ title:     "Portfolio"
         description="Implementation of GPAR in Python"
     %}
     {% include project_entry.html
-        title="Orthogonal Linear Mixing Model"
-        link="https://github.com/wesselb/olmm"
-        description="Implementation of the OLMM in Python"
-    %}
-    {% include project_entry.html
-        title="GPAR-OLMM"
-        link="https://github.com/wesselb/gpar-olmm"
-        description="Implementation of GPAR-OLMM in Python"
+        title="Convolutional Conditional Neural Processes"
+        link="https://github.com/wesselb/ConvCNPs.jl"
+        description="A framework for neural processes in Julia"
     %}
     {% include project_entry.html
         title="Convolutional Conditional Neural Processes"
         link="https://github.com/cambridge-mlg/convcnp"
-        description="Implementation of ConvCNP in Python"
+        description="Implementation of the ConvCNP in Python"
+    %}
+    {% include project_entry.html
+        title="Gaussian Process Convolution Model"
+        link="https://github.com/wesselb/gpcm"
+        description="Implementation of several variants of the GPCM in Python"
+    %}
+    {% include project_entry.html
+        title="Orthogonal Instantatenous Linear Mixing Model"
+        link="https://github.com/wesselb/oilmm"
+        description="Implementation of the OILMM in Python"
+    %}
+    {% include project_entry.html
+        title="GPAR-OILMM"
+        link="https://github.com/wesselb/gpar-oilmm"
+        description="Implementation of GPAR-OILMM in Python"
     %}
 </ul>
 
@@ -76,6 +86,11 @@ title:     "Portfolio"
         description="A collection of machine learning algorithms"
     %}
     {% include project_entry.html
+        title="Note"
+        link="https://github.com/wesselb/note"
+        description="Simple and quick note taking system"
+    %}
+    {% include project_entry.html
         title="Catalogue"
         link="https://github.com/wesselb/catalogue"
         description="Resource management with Alfred"
@@ -89,6 +104,13 @@ title:     "Portfolio"
 
 ## Publications
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="publications/Bruinsma, 2020, Scalable Exact Inference in Multi-Output Gaussian Processes.pdf"
+        authors="Bruinsma, W. P., Perim E., Tebbutt W., Hosking, J. S., Solin, A., and Turner, R. E."
+        year="2020"
+        title="Scalable Exact Inference in Multi-Output Gaussian Processes"
+        note="International Conference on Machine Learning (ICML), 37th"
+    %}
     {% include publication_entry.html
         file="publications/Gordon, 2020, Convolutional Conditional Neural Processes.pdf"
         authors="Gordon, J., Bruinsma W. P., Foong, A. Y. K., Requeima, J., Dubois Y., and Turner R. E."
@@ -136,13 +158,6 @@ title:     "Portfolio"
 ## arXiv Submissions
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="arxiv/Bruinsma, 2019, Scalable Exact Inference in Multi-Output Gaussian Processes.pdf"
-        authors="Bruinsma, W. P., Perim, E., Tebbutt, W., Hosking, J. S., Solin, A., and Turner, R. E."
-        year="2019"
-        title="Exact Scalable Inference in Multi-Output Gaussian Processes"
-        note="arXiv:1911.06287"
-    %}
-    {% include publication_entry.html
         file="arxiv/Bruinsma, 2018, Learning Causally-Generated Stationary Time Series.pdf"
         authors="Bruinsma, W. P. and Turner, R. E."
         year="2018"
@@ -182,6 +197,21 @@ title:     "Portfolio"
 
 ## Talks
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="talks/Bruinsma, Scalable Exact Inference in Multi-Output Gaussian Processes (Handout).pdf"
+        authors="Bruinsma, W. P., Perim E., Tebbutt W., Hosking, J. S., Solin, A., and Turner, R. E."
+        title="Scalable Exact Inference in Multi-Output Gaussian Processes (ICML 2020)"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Compositional Model Design, High-Dimensional Multi-Output Regression (Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Compositional Model Design: High-Dimensional Multi-Output Regression"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Points and Circles.pdf"
+        authors="Bruinsma, W. P."
+        title="Points and Circles"
+    %}
     {% include publication_entry.html
         file="talks/Bruinsma, Orthogonal Bases for Multi-Output Gaussian Processes (Handout).pdf"
         authors="Bruinsma, W. P."
