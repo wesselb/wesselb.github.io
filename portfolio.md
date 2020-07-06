@@ -158,6 +158,13 @@ title:     "Portfolio"
 ## arXiv Submissions
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="arxiv/Foong, 2020, Meta-Learning Stationary Stochastic Process Prediction With  Convolutional Neural Processes.pdf"
+        authors="Foong, A. Y. K., Bruinsma W. P., Gordon. J., Dubois, Y., Requeima J., and Turner R. E."
+        year="2020"
+        title="Meta-Learning Stationary Stochastic Process Prediction with Convolutional Neural Processes"
+        note="arXiv:2007.01332"
+    %}
+    {% include publication_entry.html
         file="arxiv/Bruinsma, 2018, Learning Causally-Generated Stationary Time Series.pdf"
         authors="Bruinsma, W. P. and Turner, R. E."
         year="2018"
