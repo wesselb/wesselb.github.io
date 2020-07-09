@@ -17,9 +17,9 @@ title:     "Portfolio"
         description="Implementation of GPAR in Python"
     %}
     {% include project_entry.html
-        title="Convolutional Conditional Neural Processes"
-        link="https://github.com/wesselb/ConvCNPs.jl"
-        description="A framework for neural processes in Julia"
+        title="Neural Processes"
+        link="https://github.com/wesselb/NeuralProcesses.jl"
+        description="A framework for Neural Processes in Julia"
     %}
     {% include project_entry.html
         title="Convolutional Conditional Neural Processes"
