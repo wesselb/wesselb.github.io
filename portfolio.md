@@ -205,6 +205,11 @@ title:     "Portfolio"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="talks/Bruinsma, NeuralProcesses.jl.pdf"
+        authors="Bruinsma, W. P., Gordon J., and Turner, R. E."
+        title="NeuralProcesses.jl: Composing Neural Processes with Flux (JuliaCon 2020)"
+    %}
+    {% include publication_entry.html
         file="talks/Bruinsma, Scalable Exact Inference in Multi-Output Gaussian Processes (Handout).pdf"
         authors="Bruinsma, W. P., Perim E., Tebbutt W., Hosking, J. S., Solin, A., and Turner, R. E."
         title="Scalable Exact Inference in Multi-Output Gaussian Processes (ICML 2020)"
