@@ -19,7 +19,7 @@ title:     "Portfolio"
     {% include project_entry.html
         title="Neural Processes"
         link="https://github.com/wesselb/NeuralProcesses.jl"
-        description="A framework for Neural Processes in Julia"
+        description="A framework for composing Neural Processes in Julia"
     %}
     {% include project_entry.html
         title="Convolutional Conditional Neural Processes"
@@ -204,6 +204,11 @@ title:     "Portfolio"
 
 ## Talks
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        url="https://www.youtube.com/watch?v=nq6X-w5xgLo"
+        authors="Bruinsma, W. P., Gordon J., and Turner, R. E."
+        title="NeuralProcesses.jl: Composing Neural Processes with Flux (JuliaCon 2020) <span class=\"tag\">video</span>"
+    %}
     {% include publication_entry.html
         file="talks/Bruinsma, NeuralProcesses.jl.pdf"
         authors="Bruinsma, W. P., Gordon J., and Turner, R. E."

@@ -58,6 +58,15 @@ article {
                         transition: color .2s;
                     }
                 }
+
+                // Tags of entries
+                .tag {
+                    background: $dark;
+                    color: #fff;
+                    border-radius: 5px;
+                    padding: 2px 5px 2px 5px;
+                    margin-left: .5em;
+                }
             }
 
             // Sliding background animation
