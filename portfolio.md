@@ -105,6 +105,13 @@ title:     "Portfolio"
 ## Publications
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="arxiv/Foong, 2020, Meta-Learning Stationary Stochastic Process Prediction With  Convolutional Neural Processes.pdf"
+        authors="Foong, A. Y. K., Bruinsma W. P., Gordon. J., Dubois, Y., Requeima J., and Turner R. E."
+        year="2020"
+        title="Meta-Learning Stationary Stochastic Process Prediction with Convolutional Neural Processes"
+        note="arXiv:2007.01332"
+    %}
+    {% include publication_entry.html
         file="publications/Bruinsma, 2020, Scalable Exact Inference in Multi-Output Gaussian Processes.pdf"
         authors="Bruinsma, W. P., Perim E., Tebbutt W., Hosking, J. S., Solin, A., and Turner, R. E."
         year="2020"
@@ -133,6 +140,13 @@ title:     "Portfolio"
         note="Artificial Intelligence and Statistics (AISTATS), 22nd International Conference on"
     %}
     {% include publication_entry.html
+        file="arxiv/Bruinsma, 2018, Learning Causally-Generated Stationary Time Series.pdf"
+        authors="Bruinsma, W. P. and Turner, R. E."
+        year="2018"
+        title="Learning Causally Generated Stationary Time Series"
+        note="arXiv:1802.08167"
+    %}
+    {% include publication_entry.html
         file="publications/Bosma, 2017, Grating Lobes Prediction in 3D Array Antennas.pdf"
         authors="Bosma, S., Bruinsma, W. P., Hes, R. P., Bentum, M. J., and Lager, I. E."
         year="2017"
@@ -152,24 +166,6 @@ title:     "Portfolio"
         year="2015"
         title="Beamforming in Sparse, Random, 3D Array Antennas with Fluctuating Element Locations"
         note="Antennas and Propagation (EuCAP), 9th European Conference on"
-    %}
-</ul>
-
-## arXiv Submissions
-<ul class="portfolio-list">
-    {% include publication_entry.html
-        file="arxiv/Foong, 2020, Meta-Learning Stationary Stochastic Process Prediction With  Convolutional Neural Processes.pdf"
-        authors="Foong, A. Y. K., Bruinsma W. P., Gordon. J., Dubois, Y., Requeima J., and Turner R. E."
-        year="2020"
-        title="Meta-Learning Stationary Stochastic Process Prediction with Convolutional Neural Processes"
-        note="arXiv:2007.01332"
-    %}
-    {% include publication_entry.html
-        file="arxiv/Bruinsma, 2018, Learning Causally-Generated Stationary Time Series.pdf"
-        authors="Bruinsma, W. P. and Turner, R. E."
-        year="2018"
-        title="Learning Causally Generated Stationary Time Series"
-        note="arXiv:1802.08167"
     %}
 </ul>
 
