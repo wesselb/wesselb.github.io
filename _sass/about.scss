@@ -34,16 +34,16 @@ article {
             &+a { margin-left: .5em; }
 
             // Background images
-            &#cv { background-image: url($baseurl + "/assets/images/icons8-cv-white.png");
-                   &:hover { background-image: url($baseurl + "/assets/images/icons8-cv-blue.png"); } }
-            &#mail { background-image: url($baseurl + "/assets/images/icons8-mail-white.png");
-                   &:hover { background-image: url($baseurl + "/assets/images/icons8-mail-blue.png"); } }
-            &#scholar { background-image: url($baseurl + "/assets/images/icons8-scholar-white.png");
-                   &:hover { background-image: url($baseurl + "/assets/images/icons8-scholar-blue.png"); } }
-            &#github { background-image: url($baseurl + "/assets/images/icons8-github-white.png");
-                   &:hover { background-image: url($baseurl + "/assets/images/icons8-github-blue.png"); } }
-            &#linkedin { background-image: url($baseurl + "/assets/images/icons8-linkedin-white.png");
-                   &:hover { background-image: url($baseurl + "/assets/images/icons8-linkedin-blue.png"); } }
+            &#cv { background-image: url($baseurl + '/assets/images/icons8-cv-white.png');
+                   &:hover { background-image: url($baseurl + '/assets/images/icons8-cv-blue.png'); } }
+            &#mail { background-image: url($baseurl + '/assets/images/icons8-mail-white.png');
+                   &:hover { background-image: url($baseurl + '/assets/images/icons8-mail-blue.png'); } }
+            &#scholar { background-image: url($baseurl + '/assets/images/icons8-scholar-white.png');
+                   &:hover { background-image: url($baseurl + '/assets/images/icons8-scholar-blue.png'); } }
+            &#github { background-image: url($baseurl + '/assets/images/icons8-github-white.png');
+                   &:hover { background-image: url($baseurl + '/assets/images/icons8-github-blue.png'); } }
+            &#linkedin { background-image: url($baseurl + '/assets/images/icons8-linkedin-white.png');
+                   &:hover { background-image: url($baseurl + '/assets/images/icons8-linkedin-blue.png'); } }
         }
     }
 }

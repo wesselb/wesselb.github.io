@@ -21,7 +21,7 @@ article {
 
         // Triangle
         .tag:after {
-            content: "";
+            content: '';
             border-style: solid;
             border-color: transparent transparent transparent $dark;
             border-width: .75em 0 .75em .75em;

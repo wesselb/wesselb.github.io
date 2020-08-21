@@ -11,12 +11,12 @@ $dark:      #30395C;
 $light:     #c0c0c0;
 
 // Set $baseurl.
-$baseurl: "{{ site.baseurl }}";
+$baseurl: '{{ site.baseurl }}';
 
-@charset "utf-8";
+@charset 'utf-8';
 
-@import "template";
-@import "article";
-@import "posts";
-@import "portfolio";
-@import "about";
+@import 'template';
+@import 'article';
+@import 'posts';
+@import 'portfolio';
+@import 'about';
