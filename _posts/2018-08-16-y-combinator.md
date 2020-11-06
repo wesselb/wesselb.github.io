@@ -82,7 +82,7 @@ To see this, let's denote $$\code{fact2}=Y\,\code{fact}'$$ and verify that $$\co
     &= (\lambda\, f : (\lambda\, x : f\,(x\, x))\, (\lambda\, x : f\,(x\, x)))\, \code{fact}' \newline 
     &= (\lambda\, x : \code{fact}'\,(x\, x) )\, (\lambda\, x : \code{fact}'\,(x\, x)) \label{eq:step-1} \newline
     &= \code{fact}'\, ((\lambda\, x : \code{fact}'\, (x\, x))\,(\lambda\, x : \code{fact}'\, (x\, x))) \label{eq:step-2} \newline
-    &= \code{fact}'\, (Y\, \code{fact}') \\\
+    &= \code{fact}'\, (Y\, \code{fact}') \newline
     &= \code{fact}'\, \code{fact2},
 \end{align}
 
