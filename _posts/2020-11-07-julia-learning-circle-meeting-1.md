@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "Julia Learning Circle: Meeting 1"
-tags:        [julia, julia learning circle]
+tags:        [julia, julia learning circle, computer science]
 comments:    true
 ---
 
