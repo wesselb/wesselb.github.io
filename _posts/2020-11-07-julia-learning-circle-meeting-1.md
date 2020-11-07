@@ -140,11 +140,9 @@ Lastly, we discuss one more common scenario in which method invalidations happen
 Consider
 
 ```julia
-julia> f(x::Int) = 1
-f (generic function with 1 method)
+julia> f(x::Int) = 1;
 
-julia> g(x) = f(x)
-g (generic function with 1 method)
+julia> g(x) = f(x);
 
 julia> g("1")
 ERROR: MethodError: no method matching f(::String)
