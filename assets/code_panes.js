@@ -61,8 +61,18 @@ function getLang(el) {
  * Turn a list of blocks of codes into panes.
  */
 function makePanes(panes) {
-    // Get titles of the panes.
+    // Get languages of the panes.
     langs = panes.map(getLang)
+
+    // Determine the titles of the buttons.
+    titles = []
+    for (i = 0; i < langs.length; i++) {
+        if (panes[i].attr("title")) {
+            titles.push(panes[i].attr("title"))
+        } else {
+            titles.push(langs[i])
+        }
+    }
 
     // Create menu.
     menu = document.createElement("div")
@@ -71,7 +81,7 @@ function makePanes(panes) {
     // Add buttons to the menu.
     buttons = []
     for (i = 0; i < langs.length; i++) {
-        button = createButton(panes, langs, i)
+        button = createButton(panes, titles, i)
         menu.appendChild(button)
         buttons.push(button)
     }
@@ -124,7 +134,8 @@ $(document).ready(function() {
 
     // Turn the subsequent sequences into panes.
     subsequents.forEach(function(panes) {
-        if (panes.length > 1)
+        if (panes.length > 1) {
             makePanes(panes)
+        }
     })
 })
