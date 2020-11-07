@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       "Julia Learning Circle: Meeting 1"
+title:       "Julia Learning Circle: JIT and Method Invalidations"
 tags:        [julia, julia learning circle, computer science]
 comments:    true
 ---
