@@ -9,7 +9,7 @@ I am participating in a learning circle with the goal of gaining a better unders
 To better retain what we learn, I will be turning my notes into small blog posts.
 The posts should be simple, quick, but hopefully enjoyable reads.
 
-The code snippets in this post are ran on Julia 1.6.0-DEV.1440.
+The code snippets in this post are run on Julia 1.6.0-DEV.1440.
 
 ## Just-in-Time Compilation
 
