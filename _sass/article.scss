@@ -129,23 +129,21 @@ article {
 
         // Pane buttons
         a {
-            font-family: 'roboto condensed', sans-serif;
-            text-transform: lowercase;
+            font-family: 'Roboto Condensed', sans-serif;
             text-decoration: none;
-            color: $light;
+            color: $dark;
             display: inline-block;
             padding: 0 1em 0 1em;
-            background-color: #fdf6e3;
+            background-color: #efefef;
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
-            border-bottom: 1px solid #dedede;
 
             // Spacing between buttons
             &+a { margin-left: .5em; }
 
             // Selection effect
             &:hover, &.selected {
-                border-bottom: 1px solid #fdf6e3;
+                background-color: #fdf6e3;
                 cursor: pointer;
                 color: $dark;
                 color: #586e75;
