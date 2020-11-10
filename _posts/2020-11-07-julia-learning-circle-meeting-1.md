@@ -13,7 +13,7 @@ The code snippets in this post are run on Julia 1.6.0-DEV.1440.
 
 ## Just-in-Time Compilation
 
-The first time a method is ran, it will [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_compilation) be compiled.
+The first time a method is run, it will [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_compilation) (JIT) be compiled.
 The compilation time can be measured with `@time`.
 
 ```julia
@@ -38,6 +38,12 @@ julia> @time inv(A);
 julia> @time inv(A);
   0.000017 seconds (4 allocations: 1.125 KiB)
 ```
+
+The Julia JIT is simple:
+it comes a method once it is required.
+This, however, comes at the cost of start-up time and delays during runtime.
+Other approaches, like [PyPy](https://www.pypy.org/), first run the code on an interpreter, profile the code, and then compile bits of the code based on the profiling results;
+this is called [profile-guided optimisation](https://en.wikipedia.org/wiki/Profile-guided_optimization) (POGO).
 
 ## Method Invalidation
 
@@ -92,7 +98,7 @@ MethodInstance for my_add(::Float64, ::Float64) (10 children)
 This shows the whole call stack.
 You can interactively navigate the stack with `ascend(trees[1].backedges[end])`, which uses [Cthulhu.jl](https://github.com/JuliaDebug/Cthulhu.jl).
 
-Let's perform some timings to see whether we can detect the delays due to method invalidations.
+Let's perform some timings to see whether we can detect delays due to method invalidations.
 Start up a fresh Julia REPL.
 
 {: title="Invalidation" }
@@ -133,7 +139,7 @@ julia> @time my_sum(x);
   0.000004 seconds (1 allocation: 16 bytes)
 ```
 
-In the first case, where `my_add(::Float64, ::Float64)` gets invalidated, the second call `my_sum(x)` again incurs compilation time.
+In the first case, where `my_add(::Float64, ::Float64)` gets invalidated, the second call of `my_sum(x)` again incurs compilation time.
 This does not happen in the second case.
 
 Lastly, we discuss one more common scenario in which method invalidations happen.
