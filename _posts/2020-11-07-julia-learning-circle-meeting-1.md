@@ -173,5 +173,3 @@ julia> invalidation_trees(@snoopr begin f(x::String) = 1 end)
  inserting f(x::String) in Main at REPL[11]:1 invalidated:
    mt_backedges: 1: signature Tuple{typeof(f), String} triggered MethodInstance for g(::String) (0 children)
 ```
-
-
