@@ -18,6 +18,9 @@ article {
         }
     }
 
+    // Break long links.
+    word-wrap: break-word;
+
     // Date at the bottom
     &>date {
         margin-top: 2em;
@@ -146,9 +149,16 @@ article {
                 background-color: #fdf6e3;
                 cursor: pointer;
                 color: $dark;
-                color: #586e75;
             }
         }
+    }
+
+    // Inline code
+    code.highlighter-rouge {
+        background: #efefef;
+        color: $dark;
+        padding: 3px 5px 2px 5px;
+        border-radius: 2px;
     }
 
     // Footnotes
