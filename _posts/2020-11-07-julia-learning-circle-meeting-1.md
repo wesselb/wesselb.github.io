@@ -40,7 +40,7 @@ julia> @time inv(A);
 ```
 
 The Julia JIT is simple:
-it comes a method once it is required.
+it compiles a method once the method is required.
 This, however, comes at the cost of start-up time and delays during runtime.
 Other approaches, like [PyPy](https://www.pypy.org/), first run the code on an interpreter, profile the code, and then compile bits of the code based on the profiling results;
 this is called [profile-guided optimisation](https://en.wikipedia.org/wiki/Profile-guided_optimization) (POGO).
