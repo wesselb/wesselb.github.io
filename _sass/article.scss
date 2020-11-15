@@ -16,10 +16,11 @@ article {
         &:hover {
             text-decoration: underline;
         }
+
+        // Break long links.
+        word-wrap: break-word;
     }
 
-    // Break long links.
-    word-wrap: break-word;
 
     // Date at the bottom
     &>date {
