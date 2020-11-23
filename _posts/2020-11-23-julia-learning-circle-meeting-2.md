@@ -142,7 +142,8 @@ This example demonstrates that memory allocations can substantially contribute t
 
 The idea of allocating vectors on the stack is certainly not mine.
 Check out the fantastic [StaticArrays.jl](https://github.com/JuliaArrays/StaticArrays.jl), which provides a generic implementation of stack-allocated arrays.
-If the size of the array is small, these stack-allocated arrays can be significantly more performant than their heap-allocated counterparts.
+If the size of the array is small, [these stack-allocated arrays can be significantly more performant than their heap-allocated counterparts](https://github.com/JuliaArrays/StaticArrays.jl#speed).
+StaticArrays.jl works by automagically generating implementations of linear algebra operations that are optimised for specific sizes of vectors or matrices by using [generated functions](https://docs.julialang.org/en/v1/manual/metaprogramming/#Generated-functions).
 
 ## Garbage Collection
 
