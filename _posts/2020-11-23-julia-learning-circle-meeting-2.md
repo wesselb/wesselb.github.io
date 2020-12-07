@@ -53,7 +53,7 @@ Let's see if we can create a more performant vector by creating a vector type th
 
 ```julia
 struct StackVector{N}
-    data::Tuple{N, Float64}
+    data::NTuple{N, Float64}
 end
 
 StackVector(data::Vector{Float64}) = StackVector(Tuple(data))
@@ -105,7 +105,7 @@ julia> collect(add(stack_x, stack_y).data)
 ```
 
 That looks good.
-Now check out the _massive_ performance improvement that we get by avoiding allocations on the heap.
+Now let's see what avoiding allocations on the heap gets us.
 
 ```julia
 julia> using BenchmarkTools
@@ -137,7 +137,45 @@ BenchmarkTools.Trial:
   evals/sample:     1000
 ```
 
-For this small array, that's an improvement in runtime of three orders of magnitude.
+Whoa!
+What happened here is that the compiler is a little too clever:
+it managed to figure out the answer at compile time and essentially hardcode the answer.
+Compare this with
+
+```julia
+julia> @benchmark stack_z = $(add(stack_x, stack_y))
+BenchmarkTools.Trial:
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     0.052 ns (0.00% GC)
+  median time:      0.055 ns (0.00% GC)
+  mean time:        0.056 ns (0.00% GC)
+  maximum time:     8.968 ns (0.00% GC)
+  --------------
+  samples:          10000
+  evals/sample:     1000
+```
+
+To get around this issue, [BenchmarkTools.jl](https://github.com/JuliaCI/BenchmarkTools.jl#quick-start) advises the following trick:
+
+```julia
+julia> @benchmark stack_z = add($(Ref(stack_x))[], $(Ref(stack_y))[])
+BenchmarkTools.Trial:
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     2.276 ns (0.00% GC)
+  median time:      2.293 ns (0.00% GC)
+  mean time:        2.401 ns (0.00% GC)
+  maximum time:     30.049 ns (0.00% GC)
+  --------------
+  samples:          10000
+  evals/sample:     1000
+```
+
+That looks more reasonable.
+For this small array, compared to the heap-allocated array, that's an 25x improvement in runtime!
 This example demonstrates that memory allocations can substantially contribute to the total runtime of a program.
 
 The idea of allocating vectors on the stack is certainly not mine.
@@ -149,7 +187,7 @@ StaticArrays.jl works by automagically generating implementations of linear alge
 
 As more and more objects are allocated on the heap, eventually the heap fills up.
 The purpose of the _garbage collector_ is to clean up the heap every once in a while.
-The underlying principle of the garbage collection is that objects are considered _garbage_, hence can be cleaned, if it can be proven that they cannot be _reached_ (used) anymore in future code.
+The underlying principle of garbage collection is that objects are considered _garbage_, hence can be cleaned, if it can be proven that they cannot be _reached_ (used) anymore in future code.
 
 Julia's garbage collector algorithm is called _mark and sweep_.
 This algorithm consists of two phases:
@@ -159,7 +197,7 @@ The mark phase first establishes a set of objects that are definitely _not_ garb
 This set is called the _root set_, and [essentially consists of all global variables and everything on the stack](https://stackoverflow.com/questions/30080745/how-does-the-mark-in-mark-and-sweep-function-trace-out-the-set-of-objects-acce).
 The garbage collector then follows everything that the root set references, and everything that those references reference, and marks those objects along the way.
 
-During the sweep phase, the unmarked objects are _freed_, which simply means that it is internally recorded that the memory can be freely overwritten and used for something else.
+During the sweep phase, the unmarked objects are _freed_, which simply means that it is internally recorded that their memory can be freely overwritten and used for something else.
 These unmarked objects are found by walking through the whole heap.
 Marked objects, on the other hand, remain untouched.
 They are also not moved around:
