@@ -157,7 +157,7 @@ BenchmarkTools.Trial:
   evals/sample:     1000
 ```
 
-To get around this issue, [BenchmarkTools.jl](https://github.com/JuliaCI/BenchmarkTools.jl#quick-start) advises the following trick:
+To stop the compiler from being too clever, [BenchmarkTools.jl](https://github.com/JuliaCI/BenchmarkTools.jl#quick-start) advises the following trick:
 
 ```julia
 julia> @benchmark stack_z = add($(Ref(stack_x))[], $(Ref(stack_y))[])
@@ -175,8 +175,8 @@ BenchmarkTools.Trial:
 ```
 
 That looks more reasonable.
-For this small array, compared to the heap-allocated array, that's an 25x improvement in runtime!
-This example demonstrates that memory allocations can substantially contribute to the total runtime of a program.
+For this small array, compared to the allocating on the heap, that's an 25x improvement in runtime!
+This example demonstrates that allocations on the heap can substantially contribute to the total runtime of a program.
 
 The idea of allocating vectors on the stack is certainly not mine.
 Check out the fantastic [StaticArrays.jl](https://github.com/JuliaArrays/StaticArrays.jl), which provides a generic implementation of stack-allocated arrays.
