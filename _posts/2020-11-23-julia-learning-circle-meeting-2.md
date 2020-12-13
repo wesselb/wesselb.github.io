@@ -59,11 +59,12 @@ end
 StackVector(data::Vector{Float64}) = StackVector(Tuple(data))
 ```
 
-Define `add` for the typical `Vector{Float64}` and our newly defined `StackVector`.
+Define `+` for our newly defined `StackVector`.
 
 ```julia
-add(x::Vector{Float64}, y::Vector{Float64}) = x .+ y
-add(x::StackVector{N}, y::StackVector{N}) where N = StackVector{N}(x.data .+ y.data)
+import Base: +
+
++(x::StackVector{N}, y::StackVector{N}) where N = StackVector{N}(x.data .+ y.data)
 ```
 
 Let's check that this works as intended.
@@ -77,7 +78,7 @@ julia> stack_x = StackVector(x);
 
 julia> stack_y = StackVector(y);
 
-julia> add(x, y)
+julia> x + y
 10-element Vector{Float64}:
  -0.5453143850886275
   2.120385168072067
@@ -90,7 +91,7 @@ julia> add(x, y)
   0.26775849165909
  -2.7389288669831786
 
-julia> collect(add(stack_x, stack_y).data)
+julia> collect((stack_x + stack_y).data)
 10-element Vector{Float64}:
  -0.5453143850886275
   2.120385168072067
@@ -110,7 +111,7 @@ Now let's see what avoiding allocations on the heap gets us.
 ```julia
 julia> using BenchmarkTools
 
-julia> @benchmark z = add($x, $y)
+julia> @benchmark $x + $y
 BenchmarkTools.Trial:
   memory estimate:  160 bytes
   allocs estimate:  1
@@ -123,7 +124,7 @@ BenchmarkTools.Trial:
   samples:          10000
   evals/sample:     987
 
-julia> @benchmark stack_z = add($stack_x, $stack_y)
+julia> @benchmark $stack_x + $stack_y
 BenchmarkTools.Trial:
   memory estimate:  0 bytes
   allocs estimate:  0
@@ -139,11 +140,11 @@ BenchmarkTools.Trial:
 
 Whoa!
 What happened here is that the compiler is a little too clever:
-it managed to figure out the answer at compile time and essentially hardcode the answer.
+it managed to figure out the answer at compile time and essentially hardcoded the answer.
 Compare this with
 
 ```julia
-julia> @benchmark stack_z = $(add(stack_x, stack_y))
+julia> @benchmark $(stack_x + stack_y)
 BenchmarkTools.Trial:
   memory estimate:  0 bytes
   allocs estimate:  0
@@ -160,7 +161,7 @@ BenchmarkTools.Trial:
 To stop the compiler from being too clever, [BenchmarkTools.jl](https://github.com/JuliaCI/BenchmarkTools.jl#quick-start) advises the following trick:
 
 ```julia
-julia> @benchmark stack_z = add($(Ref(stack_x))[], $(Ref(stack_y))[])
+julia> @benchmark $(Ref(stack_x))[] + $(Ref(stack_y))[]
 BenchmarkTools.Trial:
   memory estimate:  0 bytes
   allocs estimate:  0
