@@ -5,14 +5,14 @@ tags:        [julia, julia learning circle, computer science]
 comments:    true
 ---
 
-In this post, we will take a brief look at [generated functions](https://docs.julialang.org/en/v1.6-dev/manual/metaprogramming/#Generated-functions).
-Whereas a normal function outputs the result of the computation by the function, a generated function outputs _code that implements the function_.
-In generating this code, the generated function can only make use of the _types_ of the arguments, not their _values_.
+A normal function outputs the result of the computation by the function.
+In contrast, a [generated function](https://docs.julialang.org/en/v1.6-dev/manual/metaprogramming/#Generated-functions) outputs _the code that implements the function_.
+While generating this code, the generated function can only make use of the _types_ of the arguments, not their _values_.
 In a sense, generated functions offer ["on-demand code generation"](https://discourse.julialang.org/t/understanding-generated-functions/10092/4).
 This mechanism is quite powerful and can be used when normal functions in combination with multiple dispatch cannot give you what you need.
 
-To illustrate generated functions, we will build on the example of [stack-allocated vectors from the previous post]({% post_url 2020-11-23-julia-learning-circle-meeting-2 %}#case-study-stack-allocated-vectors-aka-a-very-brief-introduction-to-staticarraysjl), so first give that a quick look if you haven't yet.
-In particular, we will extend our stack-allocated vector to a stack-allocated _matrix_ and we will use a generated function to implement matrix multiplication.
+To illustrate generated functions, we will build on the example of [stack-allocated vectors from the previous post]({% post_url 2020-11-23-julia-learning-circle-meeting-2 %}#case-study-stack-allocated-vectors-aka-a-very-brief-introduction-to-staticarraysjl).
+We will extend our stack-allocated vector to a stack-allocated _matrix_, and we will use a generated function to implement matrix multiplication.
 Let's start out by defining a stack-allocated vector and matrix.
 
 ```julia
@@ -32,7 +32,7 @@ end
 The type signature is `StackMatrix{T, M, N, L}` where `T` is the type of the elements of the matrix, `M` is the number of rows of the matrix, `N` is the number of columns of the matrix, and `L = M * N` is the total number of elements in the matrix;
 even though `L` can always be computed from `M` and `N`, we need `L` in the type signature, because it specifies the length of the `NTuple`.
 
-Before we implement multiplication for general `StackMatrix{T, M, N, L}`s, we first implement the case of `StackMatrix{T, 2, 2, 4}`s.
+Before we implement multiplication of general `StackMatrix{T, M, N, L}`s, we first consider the case of `StackMatrix{T, 2, 2, 4}`s.
 
 
 ```julia
@@ -102,8 +102,9 @@ BenchmarkTools.Trial:
   evals/sample:     1000
 ```
 
-The problem with multiplication of general `StackMatrix{T, M, N, L}`s is that the implementation depends on the particular values of `M` and `N` --- for example, the number of variables `z11`, `z21`, _et cetera_.
-We will use a generated function to, for particular values of `M` and `N`, _automatically generate the implementation of the corresponding matrix multiplication_.
+The problem with multiplication of general `StackMatrix{T, M, N, L}`s is that the implementation depends on the particular values of `M` and `N` --- for example, the variables `z11`, `z21`, _et cetera_.
+We will use a generated function to _automatically generate the implementation of the corresponding matrix multiplication_.
+This code-generation procedure depends on the values of `M` and `N` and will adapt the implementation accordingly.
 Generated functions are defined with the macro `@generated`.
 The implementation of multiplication of general `StackMatrix{T, M, N, L}`s as follows:
 
@@ -166,7 +167,7 @@ end
 
 Sweet!
 This looks very much like our earlier implementation of the two-by-two case.
-Let's double check that the implementation is indeed correct.
+Let's again check that the implementation is correct.
 
 ```julia
 julia> x = randn(4, 2);
