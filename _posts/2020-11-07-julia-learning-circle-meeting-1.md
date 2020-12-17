@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "Julia Learning Circle: JIT and Method Invalidations"
-tags:        [julia, julia learning circle, computer science]
+tags:        [julia, julia learning circle]
 comments:    true
 ---
 

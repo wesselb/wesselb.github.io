@@ -309,6 +309,10 @@ Truncation error
 
 Balance truncation error and roundoff error
 
+## Cancellations of Step Sizes
+
+Twitter trick
+
 ## Arbitrary Order Estimates on an Arbitrary Grid
 Discuss what FDM does
 

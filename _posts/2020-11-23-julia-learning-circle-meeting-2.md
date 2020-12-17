@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "Julia Learning Circle: Memory Allocations and Garbage Collection"
-tags:        [julia, julia learning circle, computer science]
+tags:        [julia, julia learning circle]
 comments:    true
 ---
 
