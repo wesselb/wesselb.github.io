@@ -40,6 +40,13 @@ article {
                     color: $light;
                     transition: color .05s;
                 }
+
+                // Badges
+                .badge-stars {
+                    margin-left: .5em;
+                    position: relative;
+                    top: -1px;
+                }
             }
 
             // Styling of an entry
@@ -62,6 +69,7 @@ article {
                 // Tags of entries
                 .tag {
                     background: $dark;
+                    font-family: 'Roboto', sans-serif;
                     color: #fff;
                     border-radius: 5px;
                     padding: 2px 5px 2px 5px;
