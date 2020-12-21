@@ -127,7 +127,7 @@ title:     "Portfolio"
         authors="Foong, A. Y. K., Bruinsma W. P., Gordon. J., Dubois, Y., Requeima J., and Turner R. E."
         year="2020"
         title="Meta-Learning Stationary Stochastic Process Prediction with Convolutional Neural Processes"
-        note="arXiv:2007.01332"
+        note="Advances in Neural Information Processing Systems (NeurIPS), 33th"
     %}
     {% include publication_entry.html
         file="publications/Bruinsma, 2020, Scalable Exact Inference in Multi-Output Gaussian Processes.pdf"
@@ -218,6 +218,16 @@ title:     "Portfolio"
 
 ## Talks
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="talks/Bruinsma, On Sparse Variational Methods and the KL Divergence Between Stochastic Processes (Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="On Sparse Variational Method and the KL Between Stochastic Processes"
+    %}
+    {% include publication_entry.html
+        file="talks/Hron, Sequential Inference and Decision Making (Handout).pdf"
+        authors="Hron J., and Bruinsma, W. P."
+        title="Sequential Inference and Decision Making"
+    %}
     {% include publication_entry.html
         url="https://www.youtube.com/watch?v=nq6X-w5xgLo"
         authors="Bruinsma, W. P., Gordon J., and Turner, R. E."
