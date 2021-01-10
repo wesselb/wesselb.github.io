@@ -162,7 +162,7 @@ title:     "Portfolio"
         authors="Berkovich B., Perim, E., and Bruinsma, W. P."
         year="2019"
         title="GP-ALPS: Automatic Latent Process Selection for Multi-Output Gaussian Process Models"
-        note="Advanced in Approximate Bayesian Inference (AABI), 2nd Symposium on"
+        note="Advances in Approximate Bayesian Inference (AABI), 2nd Symposium on"
     %}
     {% include publication_entry.html
         file="publications/Requeima, 2019, The Gaussian Process Autoregressive Regression Model (GPAR).pdf"
@@ -238,7 +238,7 @@ title:     "Portfolio"
         title="The Gaussian Neural Process (AABI 2020) <span class=\"tag\">video</span>"
     %}
     {% include publication_entry.html
-        file="talks/Bruinsma, The Gaussian Neural Process.pdf"
+        file="talks/Bruinsma, The Gaussian Neural Process (Handout).pdf"
         authors="Bruinsma W. P., Requeima J., Foong, A. Y. K., Gordon. J., and Turner R. E."
         title="The Gaussian Neural Process (AABI 2020)"
     %}
@@ -261,6 +261,11 @@ title:     "Portfolio"
         file="talks/Bruinsma, NeuralProcesses.jl.pdf"
         authors="Bruinsma, W. P., Gordon J., and Turner, R. E."
         title="NeuralProcesses.jl: Composing Neural Processes with Flux (JuliaCon 2020)"
+    %}
+    {% include publication_entry.html
+        url="https://www.youtube.com/watch?v=OJmkz2LAM4Q"
+        authors="Bruinsma, W. P., Perim E., Tebbutt W., Hosking, J. S., Solin, A., and Turner, R. E."
+        title="Scalable Exact Inference in Multi-Output Gaussian Processes (ICML 2020) <span class=\"tag\">video</span>"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Scalable Exact Inference in Multi-Output Gaussian Processes (Handout).pdf"
