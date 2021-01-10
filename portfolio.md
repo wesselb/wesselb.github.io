@@ -127,14 +127,14 @@ title:     "Portfolio"
         authors="Bruinsma W. P., Requeima J., Foong, A. Y. K., Gordon. J., and Turner R. E."
         year="2021"
         title="The Gaussian Neural Process"
-        note="Advances in Appoximate Bayesian Inference (AABI), 3rd Symposium on"
+        note="Advances in Approximate Bayesian Inference (AABI), 3rd Symposium on"
     %}
     {% include publication_entry.html
         file="publications/Xia, 2021, The Gaussian Process Latent Autoregressive Model.pdf"
         authors="Xia, R., Bruinsma W. P., Tebbutt W., and Turner R. E."
         year="2021"
         title="The Gaussian Process Latent Autoregressive Model"
-        note="Advances in Appoximate Bayesian Inference (AABI), 3rd Symposium on"
+        note="Advances in Approximate Bayesian Inference (AABI), 3rd Symposium on"
     %}
     {% include publication_entry.html
         file="publications/Foong, 2020, Meta-Learning Stationary Stochastic Process Prediction With Convolutional Neural Processes.pdf"
