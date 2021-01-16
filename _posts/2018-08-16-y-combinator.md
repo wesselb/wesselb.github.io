@@ -6,7 +6,7 @@ comments:    true
 ---
 
 {: .pretitle}
-Cross-posted at [https://invenia.github.io/blog/2018/08/20/ycombinator/](https://invenia.github.io/blog/2018/08/20/ycombinator/).
+Cross-posted at the [Invenia blog](https://invenia.github.io/blog/2018/08/20/ycombinator/).
 
 ## Introduction
 This post is a short note on the notorious _Y combinator_.
