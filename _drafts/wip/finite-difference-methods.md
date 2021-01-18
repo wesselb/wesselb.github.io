@@ -52,7 +52,7 @@ $$
 Here $$h$$ is the previously introduced step size, and $$g_i$$ determines how many step sizes $$x_i$$ is away from $$x$$.
 Because the step size $$h$$ is the same for all sampling points $$x_i$$, a small $$h$$ will bring them close to $$x$$, whereas a large $$h$$ will make them more spread out.
 In FDM, $$(g_1, \ldots, g_n)$$ are called _grid points_, collectively referred to as the _grid_.
-Figure [(1)](#figure-sampling) illustrates the sampling process for the grid $$g=(g_1,g_2)=(-1,1)$$.
+[Figure 1](#figure-sampling) illustrates the sampling process for the grid $$g=(g_1,g_2)=(-1,1)$$.
 
 {% include image.html
     name="Figure 1"
@@ -77,7 +77,7 @@ $$
 This particular estimator is known as the _forward difference_ estimator.
 We don't yet know whether this choice for the coefficients, grid, and step size is any good; we'll get to that later.
 
-Let's consider an example, and try to construct a finite difference method `method` that evaluates $$f$$ on the grid `[-1, 1]`---like in Figure [(1)](#sampling)---to estimate the first derivative of $$\sin(x)$$, $$\exp(x)$$, and $$x^2$$ at $$x=1$$.
+Let's consider an example, and try to construct a finite difference method `method` that evaluates $$f$$ on the grid `[-1, 1]`---like in [Figure 1](#sampling)---to estimate the first derivative of $$\sin(x)$$, $$\exp(x)$$, and $$x^2$$ at $$x=1$$.
 To do so, we specify the grid and the order of the derivative to compute; FDM then computes the coefficients, and determinates an appropriate step size for us.
 
 ```python
@@ -210,9 +210,9 @@ assuming that $$E$$ is stored using $$n$$ bits, this is achieved by subtracting 
 
 Floating point numbers come in two precisions:
 _single-precision_ floating point numbers---`np.float32`, for example---spend $$32$$ to store $$S$$, $$M$$, and $$E$$, whereas _double-precision_ floating point numbers---`np.float64`, for example---spend $$64$$ bits to do so.
-Table [(1)](#table-bits-allotment) shows a breakdown of the allotment of bits by the two formats.
+[Table 1](#table-bits-allotment) shows a breakdown of the allotment of bits by the two formats.
 
-{:#table-bits-allotment}
+{: #table-bits-allotment }
 | Precision  | $$S$$ |  $$F$$ | $$E$$ | Total |
 | - | :-: | :-: | :-: | :-: |
 | Single | 1 bit | 23 bits | 8 bits | 32 bits |
@@ -232,12 +232,12 @@ Table [(1)](#table-bits-allotment) shows a breakdown of the allotment of bits by
 %}
 
 The discrepancy between a number and its approximate representation on a computer---the closest floating point number---is called the _round-off error_, which very much depends on how floating point numbers are distributed over the real line.
-Figure [(2)](#figure-fp-distribution) illustrates this distributed in the case that the fraction $$F$$ is stored using 2 bits.
+[Figure 2](#figure-fp-distribution) illustrates this distributed in the case that the fraction $$F$$ is stored using 2 bits.
 We observe that floating point numbers get denser closer to zero, but can be far apart far away from zero, meaning that the round-off error is larger for bigger numbers.
 
 Let $$x$$ be a real number, and denote by $$\fp(x)$$ the floating point number closest to $$x$$. 
-Figure [(2)](#figure-fp-distribution) further illustrates how a real number $$x$$ is rounded to the closest floating-point number $$\fp(x)$$.
-The round-off error is quanitified by the _machine epsilon_ $$\e$$---also illustrated in Figure [(2)](#figure-fp-distribution)---which gives an upper bound on the maximum relative error introduced by $$x \mapsto \fp(x)$$:
+[Figure 2](#figure-fp-distribution) further illustrates how a real number $$x$$ is rounded to the closest floating-point number $$\fp(x)$$.
+The round-off error is quanitified by the _machine epsilon_ $$\e$$---also illustrated in [Figure 2](#figure-fp-distribution)---which gives an upper bound on the maximum relative error introduced by $$x \mapsto \fp(x)$$:
 
 $$ \label{eq:machine-epsilon}
     \frac{|x - \fp(x)|}{|x|} \le  \e

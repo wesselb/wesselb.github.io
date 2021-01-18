@@ -65,8 +65,8 @@ $$
     \theta^* = \argmax_{\theta} \prod_{i=1}^n p_\theta(D^{(t)}_i \cond D^{(c)}_i).
 $$
 
-The meta-train phase, the meta-test phase, and the map $$\phi$$ are illustrated in Figure [(1)](#figure-meta-learning).
-Although Figure [(1)](#figure-meta-learning) illustrates 1D regression examples, this formulation of meta-learning is quite general and applies to more complicated data sets and tasks.
+The meta-train phase, the meta-test phase, and the map $$\phi$$ are illustrated in [Figure 1](#figure-meta-learning).
+Although [Figure 1](#figure-meta-learning) illustrates 1D regression examples, this formulation of meta-learning is quite general and applies to more complicated data sets and tasks.
 
 One example of meta-learning is _few-shot learning_: there are many classes with only a few examples (_shots_) per class, and we wish to classify a new, yet unobserved class given, again, only a few examples for that class. 
 Another example is _sim-to-real transfer_: we use a simulator to generate many synthetic data sets, and aim to exploit the statistical structure in these to make predictions for real-world data, which is often limited.
@@ -135,7 +135,7 @@ To alleviate these two key issues, parameter inefficiency and poor generalisatio
 %}
 
 The [Convolutional Conditional Neural Process](https://openreview.net/forum?id=Skey4eBYPS) --- the member of the Neural Process family that we focus on in the post --- proposes to account for a symmetry called _translation equivariance_ in the data: if the observations are shifted, then the predictions should be shifted accordingly.
-Translation equivariance is illustrated in Figure [(2)](#translation-equivariance).
+Translation equivariance is illustrated in [Figure 2](#translation-equivariance).
 
 To incorporate translation equivariance in the model, [Gordon et al. (2020)](https://openreview.net/forum?id=Skey4eBYPS) modify $$\mu_\theta$$ and $$\sigma^2_\theta$$ and propose the Set Convolution architecture:
 

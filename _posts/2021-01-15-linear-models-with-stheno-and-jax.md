@@ -93,8 +93,6 @@ pass it some inputs to get (the model for) the corresponding outputs.
     width=500
 %}
 
-
-
 We've sampled a bunch of constant functions.
 Sweet!
 The next step in the model \eqref{eq:ax_b_functional} is to multiply the slope function $$a(x)$$ by $$x$$.
@@ -175,7 +173,7 @@ Perfect!
 We will use `f` as our linear model.
 
 In practice, observations are corrupted with noise.
-We can add some noise to the lines in Figure [(3)](#figure-linear-functions) by adding a Gaussian process that models noise.
+We can add some noise to the lines in [Figure 3](#figure-linear-functions) by adding a Gaussian process that models noise.
 You can construct such a Gaussian process by using the kernel `Delta()`, which models the noise with independent $$\Normal(0, 1)$$ variables.
 
 ```python
@@ -267,7 +265,7 @@ We will see next how we can fit our model to this data.
 
 ## Inference in Linear Models
 
-Suppose that we wish to remove the noise from the observations in Figure [(6)](#figure-observations).
+Suppose that we wish to remove the noise from the observations in [Figure 6](#figure-observations).
 We carefully phrase this problem in terms of our GPPP:
 the observations `y_obs` are realisations of the _noisy_ linear model `y` at `x_obs`---realisations of `y(x_obs)`---and we wish to make predictions for the _noiseless_ linear model `f` at `x_obs`---predictions for `f(x_obs)`.
 
@@ -361,7 +359,7 @@ The error is very small---on the order of $$10^{-2}$$---which means that Stheno 
     width=500
 %}
 
-The blue line in Figure [(7)](#figure-denoised-observations) shows the mean of the predictions.
+The blue line in [Figure 7](#figure-denoised-observations) shows the mean of the predictions.
 This line appears to nicely pass through the observations with the noise removed.
 But let's see how good the predictions really are by comparing to `f_obs`, which we previously saved.
 
