@@ -238,7 +238,7 @@ y = f + 0.5 * noise                 # Noisy linear model
 
 We call a program like this a _Gaussian process probabilistic program_ (GPPP).
 Let's generate some noisy synthetic data, `(x_obs, y_obs)`, that will make up an example data set $$(x_i, y_i)_{i=1}^n$$.
-We also save the observations without noise added---`f_obs`---so we can later check how good our predictions really are.
+We also save the observations without noise added --- `f_obs` --- so we can later check how good our predictions really are.
 
 ```python
 >>> x_obs = np.linspace(0, 10, 50_000)
@@ -267,12 +267,12 @@ We will see next how we can fit our model to this data.
 
 Suppose that we wish to remove the noise from the observations in [Figure 6](#figure-observations).
 We carefully phrase this problem in terms of our GPPP:
-the observations `y_obs` are realisations of the _noisy_ linear model `y` at `x_obs`---realisations of `y(x_obs)`---and we wish to make predictions for the _noiseless_ linear model `f` at `x_obs`---predictions for `f(x_obs)`.
+the observations `y_obs` are realisations of the _noisy_ linear model `y` at `x_obs` --- realisations of `y(x_obs)` --- and we wish to make predictions for the _noiseless_ linear model `f` at `x_obs` --- predictions for `f(x_obs)`.
 
 In Stheno, we can make predictions based on observations by _conditioning_ the measure of the model on the observations.
 In our GPPP, the measure is given by `prior`, so we aim to condition `prior` on the observations `y_obs` for `y(x_obs)`.
 Mathematically, this process of incorporating information by conditioning happens through [Bayes' rule](https://en.wikipedia.org/wiki/Bayes%27_theorem).
-Programmatically, we first make an `Observations` object, which represents the information---the observations---that we want to incorporate, and then condition `prior` on this object:
+Programmatically, we first make an `Observations` object, which represents the information --- the observations --- that we want to incorporate, and then condition `prior` on this object:
 
 ```python
 >>> from stheno import Observations
@@ -326,7 +326,7 @@ With our updated measure `post`, which is often called the _posterior_ measure, 
 ```
 
 The prediction `pred` is a [multivariate Gaussian distribution](https://en.wikipedia.org/wiki/Multivariate_Gaussian_distribution) with a particular mean and variance, which are displayed above.
-You should view `post` as a function that assigns a probability distribution---the prediction---to every part of our GPPP, like `f(x_obs)`.
+You should view `post` as a function that assigns a probability distribution --- the prediction --- to every part of our GPPP, like `f(x_obs)`.
 Note that the variance of the prediction is a _massive_ matrix of size 50k $$\times$$ 50k.
 Under the hood, Stheno uses [structured representations for matrices](https://github.com/wesselb/matrix) to compute and store matrices in an efficient way.
 
@@ -345,7 +345,7 @@ array([0.01753381, 0.01753329, 0.01753276, ..., 0.01761883, 0.01761935,
        0.01761988])
 ```
 
-The error is very small---on the order of $$10^{-2}$$---which means that Stheno predicted `f(x_obs)` with high confidence.
+The error is very small --- on the order of $$10^{-2}$$ --- which means that Stheno predicted `f(x_obs)` with high confidence.
 
 ```python
 >>> plt.scatter(x_obs, y_obs); plt.plot(x_obs, mean); plt.show()
