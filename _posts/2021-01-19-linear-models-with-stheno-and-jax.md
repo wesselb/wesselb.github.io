@@ -236,7 +236,7 @@ noise = GP(Delta(), measure=prior)  # Model for noise
 y = f + 0.5 * noise                 # Noisy linear model
 ```
 
-We call a program like this a _Gaussian process probabilistic programme_ (GPPP).
+We call a program like this a _Gaussian process probabilistic program_ (GPPP).
 Let's generate some noisy synthetic data, `(x_obs, y_obs)`, that will make up an example data set $$(x_i, y_i)_{i=1}^n$$.
 We also save the observations without noise added---`f_obs`---so we can later check how good our predictions really are.
 
@@ -540,10 +540,10 @@ Compared to `linear_model_denoise`, that's a speed-up of two orders of magnitude
 
 ## Conclusion
 
-We've seen how a linear model can be implemented with a Gaussian process probabilistic programme (GPPP) using [Stheno](https://github.com/wesselb/stheno).
+We've seen how a linear model can be implemented with a Gaussian process probabilistic program (GPPP) using [Stheno](https://github.com/wesselb/stheno).
 Stheno allows us to focus on model construction, and takes away the distraction of the technicalities that come with making predictions.
 This flexibility, however, comes at the cost of some complicated machinery that happens in the background, such as structured representations of matrices.
-Fortunately, we've seen that this overhead can be completely avoided by compiling your programme using [JAX](https://github.com/google/jax), which can result in extremely efficient implementations.
+Fortunately, we've seen that this overhead can be completely avoided by compiling your program using [JAX](https://github.com/google/jax), which can result in extremely efficient implementations.
 To close this post and to warm you up for [what’s further possible with Gaussian process probabilistic programming using Stheno](https://github.com/wesselb/stheno#examples), the linear model that we’ve built can easily be extended to, for example, include a _quadratic_ term:
 
 ```python
