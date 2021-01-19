@@ -105,7 +105,7 @@ To multiply `a` by $$x$$, we multiply `a` by the function `lambda x: x`, which c
 GP(0, <lambda>)
 ```
 
-This will give rise to functions like $$x \mapsto 0.1x$$ and $$x \mapsto -0.4x$$, depending on the value the $$a(x)$$ takes.
+This will give rise to functions like $$x \mapsto 0.1x$$ and $$x \mapsto -0.4x$$, depending on the value that $$a(x)$$ takes.
 
 ```python
 >>> plt.plot(x, f(x).sample(20)); plt.show()
