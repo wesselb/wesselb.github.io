@@ -43,7 +43,7 @@ $$ \label{eq:ax_b_functional}
 $$
 
 where $$a\colon \R \to \R$$ is a _random constant function_.
-A _constant function_ is a function $$f$$ such that, for example, $$f(x) = 5$$.
+An example of a _constant function_ $$f$$ is $$f(x) = 5$$.
 _Random_ means that the value $$5$$ is not fixed, but modelled with a random value drawn from some probability distribution, because we don’t know the true value.
 We let $$b\colon \R \to \R$$ also be a random _constant function_, and $$\e\colon \R \to \R$$ a random _noise function_.
 Do you see the similarities between \eqref{eq:ax_b} and \eqref{eq:ax_b_functional}?
@@ -118,8 +118,6 @@ This will give rise to functions like $$x \mapsto 0.1x$$ and $$x \mapsto -0.4x$$
     src="posts/linear-models-slope-functions.png"
     width=500
 %}
-
-
 
 This is starting to look good!
 The only ingredient that is missing is an offset.
@@ -197,8 +195,6 @@ GP(0, <lambda> + 10 * 1 + Delta())
     width=500
 %}
 
-
-
 That looks more realistic, but perhaps that's a bit too much noise.
 We can tune down the amount of noise, for example, by scaling `noise` by `0.5`.
 
@@ -218,8 +214,6 @@ GP(0, <lambda> + 10 * 1 + 0.25 * Delta())
     src="posts/linear-models-noisy-linear-functions-2.png"
     width=500
 %}
-
-
 
 Much better.
 
@@ -258,10 +252,7 @@ We also save the observations without noise added --- `f_obs` --- so we can late
     width=500
 %}
 
-
-
 We will see next how we can fit our model to this data.
-
 
 ## Inference in Linear Models
 
