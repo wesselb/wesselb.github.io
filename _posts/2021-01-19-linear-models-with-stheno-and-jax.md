@@ -57,7 +57,7 @@ To install Stheno, run the command
 pip install --upgrade --upgrade-strategy eager stheno
 ```
 
-In Stheno, a Gaussian process can be created with `GP(kernel)` where `kernel` is the so-called [_kernel_ or _covariance function_ of the Gaussian process](https://en.wikipedia.org/wiki/Gaussian_process#Covariance_functions).
+In Stheno, a Gaussian process can be created with `GP(kernel)`, where `kernel` is the so-called [_kernel_ or _covariance function_ of the Gaussian process](https://en.wikipedia.org/wiki/Gaussian_process#Covariance_functions).
 The kernel determines the properties of the function that the Gaussian process models.
 For example, the kernel `EQ()` models smooth functions, and the kernel `Matern12()` models functions that look jagged.
 See the [kernel cookbook](https://www.cs.toronto.edu/~duvenaud/cookbook/) for an overview of commonly used kernels and the [documentation of Stheno](https://wesselb.github.io/stheno/docs/_build/html/readme.html#available-kernels) for the corresponding classes.
