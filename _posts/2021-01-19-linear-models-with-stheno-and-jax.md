@@ -8,7 +8,7 @@ comments:    true
 By Wessel Bruinsma, [James Requeima](https://jamesr.info/), and [Eric Perim Martins](https://scholar.google.com/citations?user=EIpfkw4AAAAJ)
 
 {: .pretitle}
-Cross-posted on the [Invenia blog](https://invenia.github.io/blog/2021/01/15/linear-models-with-stheno-and-jax/).
+Cross-posted on the [Invenia blog](https://invenia.github.io/blog/2021/01/19/linear-models-with-stheno-and-jax/).
 
 ## Introduction
 
