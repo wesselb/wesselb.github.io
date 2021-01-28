@@ -88,6 +88,11 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="talks/Bruinsma, Cover's Guessing Game (Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Cover's Guessing Game"
+    %}
+    {% include publication_entry.html
         url="https://www.youtube.com/watch?v=AIMOmfJInT8"
         authors="Bruinsma W. P., Requeima J., Foong, A. Y. K., Gordon. J., and Turner R. E."
         title="The Gaussian Neural Process (AABI 2020) <span class=\"tag\">video</span>"
