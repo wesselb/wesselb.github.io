@@ -10,7 +10,7 @@ title:     "Publications"
         file="publications/Bruinsma, 2021, The Gaussian Neural Process.pdf"
         authors="Bruinsma W. P., Requeima J., Foong, A. Y. K., Gordon. J., and Turner R. E."
         year="2021"
-        title="The Gaussian Neural Process"
+        title="The Gaussian Neural Process <span class=\"tag\">contributed talk</span>"
         note="Advances in Approximate Bayesian Inference (AABI), 3rd Symposium on"
     %}
     {% include publication_entry.html
@@ -38,7 +38,7 @@ title:     "Publications"
         file="publications/Gordon, 2020, Convolutional Conditional Neural Processes.pdf"
         authors="Gordon, J., Bruinsma W. P., Foong, A. Y. K., Requeima, J., Dubois Y., and Turner R. E."
         year="2020"
-        title="Convolutional Conditional Neural Processes"
+        title="Convolutional Conditional Neural Processes <span class=\"tag\">oral presentation</span>"
         note="International Conference on Learning Representations (ICLR), 8th"
     %}
     {% include publication_entry.html
@@ -187,11 +187,32 @@ title:     "Publications"
 ## Posters
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="posters/Tebbutt, 2019, (Poster) Gaussian Process Probabilistic Programming.pdf"
+        file="posters/Foong, 2020, (Poster) Meta-Learning Stationary Stochastic Process Prediction With Convolutional Neural Processes.pdf"
+        authors="Foong, A. Y. K., Bruinsma W. P., Gordon. J., Dubois, Y., Requeima J., and Turner R. E."
+        title="Meta-Learning Stationary Stochastic Process Prediction with Convolutional Neural Processes"
+        year="2020"
+        note="Advances in Neural Information Processing Systems (NeurIPS), 33th"
+    %}
+    {% include publication_entry.html
+        file="posters/Requeima, 2019, (Poster) The Gaussian Process Autoregressive Regression Model (GPAR).pdf"
+        authors="Requeima, J., Tebbutt W. C., Bruinsma, W. P., and Turner R. E."
+        title="The Gaussian Process Autoregressive Model (GPAR)"
+        year="2019"
+        note="Artificial Intelligence and Statistics (AISTATS), 22nd International Conference on"
+    %}
+    {% include publication_entry.html
+        file="posters/Tebbutt, 2018, (Poster) Gaussian Process Probabilistic Programming.pdf"
         authors="Tebbutt, W. C., Bruinsma, W. P., and Turner R. E."
         title="Gaussian Process Probabilistic Programming"
         year="2018"
         note="Probabilistic Programming (ProbProg), The International Conference on"
+    %}
+    {% include publication_entry.html
+        file="posters/Bruinsma, 2016, (Poster) Learning with Nonparametric Kernels.pdf"
+        authors="Bruinsma, W. P., F. Tobar, and Turner R. E."
+        title="Learning with Nonparametric Kernels"
+        year="2016"
+        note="Industry Session for MPhil in Machine Learning and Machine Intelligence"
     %}
 </ul>
 
