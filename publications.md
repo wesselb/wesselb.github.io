@@ -105,7 +105,7 @@ title:     "Publications"
     {% include publication_entry.html
         file="talks/Bruinsma, On Sparse Variational Methods and the KL Divergence Between Stochastic Processes (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="On Sparse Variational Method and the KL Between Stochastic Processes"
+        title="On Sparse Variational Methods and the KL Between Stochastic Processes"
     %}
     {% include publication_entry.html
         file="talks/Hron, Sequential Inference and Decision Making (Handout).pdf"
