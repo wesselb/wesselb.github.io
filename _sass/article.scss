@@ -129,6 +129,14 @@ article {
         }
     }
 
+    // Make scrollable boxes for overflowing equations.
+    mjx-container[jax="SVG"] {
+        overflow-x: auto;
+        overflow-y: hidden;  // Should never overflow.
+        direction: ltr;
+        min-width: auto !important;
+    }
+
     // Code panes, colours from Solarized Light theme
     .code-panes {
         margin-bottom: calc(-2em + 2px);
