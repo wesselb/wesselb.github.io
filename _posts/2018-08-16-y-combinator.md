@@ -117,9 +117,9 @@ Now---and this is the trick---suppose that $$f$$ is the result of a function $$\
 Then Equation \eqref{eq:fixed-point} becomes
 
 $$ 
-    \color{red}{\hat{f}} \,\hat{f}
+    {\color{red}\hat{f}} \,\hat{f}
     = h\,(\hat{f}\, \hat{f})
-    = (\color{red}{\lambda\,x:h(x\,x)})\,\,\hat{f},
+    = ({\color{red}\lambda\,x:h(x\,x)})\,\,\hat{f},
 $$
 
 from which we, by inspection, infer that
