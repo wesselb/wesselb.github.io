@@ -449,63 +449,21 @@ To achieve this, we will use [JAX](https://github.com/google/jax) to compile `li
 We start out by importing JAX and loading the JAX extension of Stheno.
 
 ```python
->>> import jax
-
 >>> import jax.numpy as jnp
 
 >>> import stheno.jax  # JAX extension for Stheno
 ```
 
-We use JAX's just-in-time (JIT) compiler `jax.jit` to compile `linear_model_denoise`:
-
-```python
->>> linear_model_denoise_jitted = jax.jit(linear_model_denoise)
-```
-
-Let's see what happens when we run `linear_model_denoise_jitted`.
-We must pass `x_obs` and `y_obs` as JAX arrays to use the compiled version.
-
-```python
->>> linear_model_denoise_jitted(jnp.array(x_obs), jnp.array(y_obs))
-Invalid argument: Cannot bitcast types with different bit-widths: F64 => S32.
-```
-
-Oh no!
-What went wrong is that the JIT compiler wasn't able to deal with the complicated control flow from the automatic linear algebra simplifications.
-Fortunately, there is a simple way around this:
-we can run the function once with NumPy to see how the control flow should go, _cache that control flow_, and then use this cache to run `linear_model_denoise` with JAX.
-Sounds complicated, but it's really just a bit of boilerplate:
+We use JAX's just-in-time (JIT) compiler to compile `linear_model_denoise`.
 
 ```python
 >>> import lab as B
 
->>> control_flow_cache = B.ControlFlowCache()
-
->>> control_flow_cache
-<ControlFlowCache: populated=False>
+>>> linear_model_denoise_jitted = B.jit(linear_model_denoise)
 ```
 
-Here `populated=False` means that the cache is not yet populated.
-Let's populate it by running `linear_model_denoise` once with NumPy:
-
-```python
->>> with control_flow_cache:
-        linear_model_denoise(x_obs, y_obs)
-
->>> control_flow_cache
-<ControlFlowCache: populated=True>
-```
-
-We now construct a compiled version of `linear_model_denoise` that uses the control flow cache:
-
-```python
-@jax.jit
-def linear_model_denoise_jitted(x_obs, y_obs):
-    with control_flow_cache:
-        return linear_model_denoise(x_obs, y_obs)
-```
-
-<p></p> <!-- Prevent tabs. -->
+Let's see what happens when we run `linear_model_denoise_jitted`.
+We must pass `x_obs` and `y_obs` as JAX arrays to use the compiled version.
 
 ```python
 >>> linear_model_denoise_jitted(jnp.array(x_obs), jnp.array(y_obs))
