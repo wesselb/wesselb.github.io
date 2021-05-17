@@ -43,10 +43,10 @@ title:     "Software"
         badge_stars="wesselb/oilmm"
     %}
     {% include project_entry.html
-        title="GPAR-OILMM"
-        link="https://github.com/wesselb/gpar-olmm"
-        description="Implementation of GPAR-OILMM in Python"
-        badge_stars="wesselb/gpar-olmm"
+        title="Convolutional Conditional Neural Processes"
+        link="https://github.com/wesselb/mlkernels"
+        description="Flexible implementation of kernels in Python"
+        badge_stars="wesselb/mlkernels"
     %}
 </ul>
 
@@ -97,7 +97,7 @@ title:     "Software"
     {% include project_entry.html
         title="WBML"
         link="https://github.com/wesselb/wbml"
-        description="A collection of machine learning algorithms"
+        description="A collection of machine learning things"
         badge_stars="wesselb/wbml"
     %}
     {% include project_entry.html
