@@ -322,16 +322,16 @@ Note that the variance of the prediction is a _massive_ matrix of size 50k $$\ti
 Under the hood, Stheno uses [structured representations for matrices](https://github.com/wesselb/matrix) to compute and store matrices in an efficient way.
 
 Let's see how the prediction `pred` for `f(x_obs)` looks like.
-The prediction `pred` exposes the method `marginals` that conveniently computes the mean and associated lower and upper error bounds for you.
+The prediction `pred` exposes the method `marginal_credible_bounds()` that conveniently computes the mean and associated lower and upper error bounds for you.
 
 ```python
->>> mean, error_bound_lower, error_bound_upper  = pred.marginals()
+>>> mean, error_lower, error_upper  = pred.marginal_credible_bounds()
 
 >>> mean
 array([-2.49818708, -2.49802708, -2.49786708, ...,  5.50148996,
         5.50164996,  5.50180997])
 
->>> error_bound_upper - error_bound_lower
+>>> error_upper - error_lower
 array([0.01753381, 0.01753329, 0.01753276, ..., 0.01761883, 0.01761935,
        0.01761988])
 ```
@@ -371,15 +371,15 @@ We wrap up this section by encapsulating everything that we've done so far in a 
 ```python
 def linear_model_denoise(x_obs, y_obs):
     prior = Measure()
-    a = GP(1, measure=prior)            # Model for slope
-    b = GP(10, measure=prior)           # Model for offset
-    f = a * (lambda x: x) + b           # Noiseless linear model
-    noise = GP(Delta(), measure=prior)  # Model for noise
-    y = f + 0.5 * noise                 # Noisy linear model
+    a = GP(1, measure=prior)                # Model for slope
+    b = GP(10, measure=prior)               # Model for offset
+    f = a * (lambda x: x) + b               # Noiseless linear model
+    noise = GP(Delta(), measure=prior)      # Model for noise
+    y = f + 0.5 * noise                     # Noisy linear model
 
-    post = prior | (y(x_obs), y_obs)    # Condition on observations.
-    pred = post(f(x_obs))               # Make predictions.
-    return pred.marginals()             # Return the mean and associated error bounds.
+    post = prior | (y(x_obs), y_obs)        # Condition on observations.
+    pred = post(f(x_obs))                   # Make predictions.
+    return pred.marginal_credible_bounds()  # Return the mean and associated error bounds.
 ```
 
 <p></p> <!-- Prevent tabs. -->
@@ -498,17 +498,17 @@ To close this post and to warm you up for [what’s further possible with Gaussi
 ```python
 def quadratic_model_denoise(x_obs, y_obs):
     prior = Measure()
-    a = GP(1, measure=prior)            # Model for slope
-    b = GP(1, measure=prior)            # Model for coefficient of quadratic term
-    c = GP(10, measure=prior)           # Model for offset
+    a = GP(1, measure=prior)                # Model for slope
+    b = GP(1, measure=prior)                # Model for coefficient of quadratic term
+    c = GP(10, measure=prior)               # Model for offset
     # Noiseless quadratic model
     f = a * (lambda x: x) + b * (lambda x: x ** 2) + c
-    noise = GP(Delta(), measure=prior)  # Model for noise
-    y = f + 0.5 * noise                 # Noisy quadratic model
+    noise = GP(Delta(), measure=prior)      # Model for noise
+    y = f + 0.5 * noise                     # Noisy quadratic model
 
-    post = prior | (y(x_obs), y_obs)    # Condition on observations.
-    pred = post(f(x_obs))               # Make predictions.
-    return pred.marginals()             # Return the mean and associated error bounds.
+    post = prior | (y(x_obs), y_obs)        # Condition on observations.
+    pred = post(f(x_obs))                   # Make predictions.
+    return pred.marginal_credible_bounds()  # Return the mean and associated error bounds.
 ```
 
 To use Gaussian process probabilistic programming for your specific problem, the main challenge is to figure out which model you need to use.
