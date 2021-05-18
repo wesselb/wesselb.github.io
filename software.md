@@ -43,7 +43,7 @@ title:     "Software"
         badge_stars="wesselb/oilmm"
     %}
     {% include project_entry.html
-        title="Convolutional Conditional Neural Processes"
+        title="MLKernels"
         link="https://github.com/wesselb/mlkernels"
         description="Flexible implementation of kernels in Python"
         badge_stars="wesselb/mlkernels"
