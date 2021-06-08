@@ -7,6 +7,13 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Foong, 2021, How Small Can PAC-Bayes be in the Small Data Regime.pdf"
+        authors="Foong, A. Y. K., Bruinsma W. P., Burt D. R., and Turner R. E."
+        year="2021"
+        title="How Tight Can PAC-Bayes be in the Small Data Regime?"
+        note="arXiv:2106.03542"
+    %}
+    {% include publication_entry.html
         file="publications/Bruinsma, 2021, The Gaussian Neural Process.pdf"
         authors="Bruinsma W. P., Requeima J., Foong, A. Y. K., Gordon. J., and Turner R. E."
         year="2021"
