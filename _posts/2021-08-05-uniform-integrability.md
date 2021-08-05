@@ -150,7 +150,7 @@ a sequence is $L^1$-convergent if and only if it is uniformly integrable.
 Uniformly integrability is generally useful tool:
 if you can prove a result for bounded random variables, then you might be able to prove the result for the greater class of uniformly integrable random variables by considering a uniform bounded approximation.
 
-## Acknowledgements
+### Acknowledgements
 
 Thanks to [Jiri Hron](https://sites.google.com/view/jirihron) for helpful comments on a draft of this post.
 
