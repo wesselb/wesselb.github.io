@@ -47,7 +47,7 @@ Instead of bounding $X$ by applying the function $f_K(x) = \ind_{\abs{x} < K} x$
 \end{equation}
 which uniformly converges to zero as $K \to 0$.
 Henceforth, for any random variable $X$, denote by $X^K =\max(\min(X, K), -K)$ the *trunction of $X$ at level $K$*.
-Since $g_K$ is continuous, trunctions preserves limits.
+Since $g_K$ is continuous, trunctions in this way preserves limits.
 
 Finally, to check that a family of random variables is uniformly integrable, the following two facts are very useful:
 
