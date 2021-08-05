@@ -108,6 +108,11 @@ article {
         width: calc(100% + 25px);
         padding-left: 25px;
 
+        // Decrease the font size of math so that it won't stretch out headers.
+        mjx-container[jax="SVG"] svg {
+            height: 0.8em;
+        }
+
         // Link icon
         .link, .ok {
             position: absolute;

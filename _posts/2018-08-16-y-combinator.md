@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "A Short Note on The Y Combinator"
-tags:        [theory, python]
+tags:        [computer science, python]
 comments:    true
 ---
 

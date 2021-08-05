@@ -301,7 +301,7 @@ __Proof.__
 Bla.
 
 cite: https://math.stackexchange.com/questions/481661/simplest-proof-of-taylors-theorem
-$$\blacksquare$$
+{% include qed.html %}
 
 Order
 

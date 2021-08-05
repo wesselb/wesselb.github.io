@@ -1,16 +1,21 @@
 <script type="text/javascript">
     window.MathJax = {
+        loader: {load: ['[tex]/html']},
         tex: {
             inlineMath: [['$', '$'], ['$$', '$$'], ['\\(', '\\)']],
             displayMath: [['$$', '$$'], ['\\[', '\\]']],
-            packages: {'[+]': ['ams']},
+            packages: {'[+]': ['ams', 'html']},
             tags: 'all',
             macros: {
                 Normal: '\\mathcal{N}',
                 R: '\\mathbb{R}',
                 C: '\\mathbb{C}',
+                E: '\\mathbb{E}',
+                P: '\\mathbb{P}',
                 sd: '\\text{d}',
                 pd: '\\partial',
+                sub: '\\subseteq',
+                ind: '\\mathbb{1}',
                 cond: '\\,|\\,',
                 ll: '\\left\\langle',
                 rr: '\\right\\rangle',
@@ -18,7 +23,8 @@
                 argmax: '\\operatorname{argmax}',
                 e: '\\varepsilon',
                 code: ['{\\small \\texttt{#1}}', 1],
-                parens: ['\\left( #1 \\right)', 1]
+                parens: ['\\left( #1 \\right)', 1],
+                abs: ['| #1 |', 1]
             }
         }
     };
