@@ -35,7 +35,7 @@ For a single variable $X$, it is true that
     \iff
     \lim_{K \to \infty} \E[\ind_{|X| \ge K} |X|] \to 0.
 \end{equation}
-Therefore, you could call a family of random variables *uniformly* integrable if the limit on the RHS, which is equivalent to integrability, converges uniformly over the family.
+Hence, you could call a family of random variables *uniformly* integrable if the limit on the RHS, which is equivalent to integrability, converges uniformly over the family.
 
 The bounded approximation given by uniform integrability can be made a bit nicer.
 Instead of bounding $X$ by applying the function $f_K(x) = \ind_{\abs{x} < K} x$, which exhibits a discontinuity at $\abs{x} = K$, uniform integrability allows us to bound $X$ by applying the nicer function $g_K(x) = \max(\min(x, K), -K)$, which is a fully continuous function:
@@ -45,7 +45,7 @@ Instead of bounding $X$ by applying the function $f_K(x) = \ind_{\abs{x} < K} x$
     \le \E[\ind_{\abs{X} \ge K}\abs{X}] + \E[\ind_{\abs{X} \ge K} K]
     \le 2 \E[\ind_{\abs{X} \ge K} \abs{X}],
 \end{equation}
-which uniformly converges to zero as $K \to 0$.
+which uniformly converges to zero as $K \to \infty$.
 Henceforth, for any random variable $X$, denote by $X^K =\max(\min(X, K), -K)$ the *trunction of $X$ at level $K$*.
 Since $g_K$ is continuous, trunctions in this way preserves limits.
 
