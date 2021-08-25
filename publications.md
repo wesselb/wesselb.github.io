@@ -7,6 +7,13 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Markou, 2021, Efficient Gaussian Neural Processes for Regression.pdf"
+        authors="Markou S., Requeima J. R., Brunisma W. P., and Turner R. E."
+        year="2021"
+        title="Efficient Gaussian Neural Processes for Regression"
+        note="Uncertainty & Robustness in Deep Learning (UDL), ICML 2021 Workshop on"
+    %}
+    {% include publication_entry.html
         file="publications/Foong, 2021, How Small Can PAC-Bayes be in the Small Data Regime.pdf"
         authors="Foong, A. Y. K., Bruinsma W. P., Burt D. R., and Turner R. E."
         year="2021"
