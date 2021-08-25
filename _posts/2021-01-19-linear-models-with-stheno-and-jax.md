@@ -54,7 +54,7 @@ We also have a [Julia version](https://github.com/willtebbutt/Stheno.jl), but in
 To install Stheno, run the command
 
 ```bash
-pip install --upgrade --upgrade-strategy eager stheno
+pip install --upgrade --upgrade-strategy eager stheno plum-dispatch==1.5.2
 ```
 
 In Stheno, a Gaussian process can be created with `GP(kernel)`, where `kernel` is the so-called [_kernel_ or _covariance function_ of the Gaussian process](https://en.wikipedia.org/wiki/Gaussian_process#Covariance_functions).
