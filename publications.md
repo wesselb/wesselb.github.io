@@ -18,7 +18,7 @@ title:     "Publications"
         authors="Foong, A. Y. K., Bruinsma W. P., Burt D. R., and Turner R. E."
         year="2021"
         title="How Tight Can PAC-Bayes be in the Small Data Regime?"
-        note="arXiv:2106.03542"
+        note="Advances in Neural Information Processing Systems (NeurIPS), 35th"
     %}
     {% include publication_entry.html
         file="publications/Bruinsma, 2021, The Gaussian Neural Process.pdf"
