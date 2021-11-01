@@ -119,14 +119,14 @@ A limitation of weak convergence is that it only handles *bounded* $f$;
 for example, weak convergence does not imply that $\E[X_n] \to \E[X]$.
 As we illustrate now, the assumption of uniform integrability can be used to strengthen the conclusion of weak convergence to include $\E[X_n] \to \E[X]$.
 
-The key observation is as follows: if $(X_n)\_{n \ge 1}$ and $X$ were bounded by some $K > 0$, then we can take $f_K\colon[-K, K]\to [-K, K]$, $f_K(x) = x$,
-which is a continuous and bounded function, to conclude that
+The key observation is as follows: if $(X_n)\_{n \ge 1}$ and $X$ were bounded by some $K > 0$, then we can apply the truncation function $g_K$, which is a continuous and bounded function, to conclude that
 \begin{equation}
-    \E[X_n] = \E[f_K(X_n)] \to \E[f_K(X)] = \E[X].
+    \E[X_n] = \E[g_K(X_n)] \to \E[g_K(X)] = \E[X].
 \end{equation}
 Instead of assuming boundedness, now assume that $(X_n)\_{n \ge 1}$ is only uniformly integrable.
 For all $K > 0$, consider the uniform bounded approximations $(X^K_n)\_{n \ge 1}$ and $X^K$.
 Because the trunction operation is continuous, every $(X_n^K)\_{n \ge 1}$ is still weakly convergent to $X^K$.
+Morever, $(X_n^K)\_{n \ge 1}$ and $X^K$ are bounded by $K > 0$.
 The foregoing argument then shows that
 $
     \lim_{n \to \infty} \E[X_n^K] = \E[X^K].
