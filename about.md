@@ -27,4 +27,5 @@ My research interests include probabilistic modelling with a focus on time serie
 {% include image.html
     alt="In the end, we are all an approximation to a GP"
     src="we-are-all-a-gp.jpg"
+    width=500
 %}
