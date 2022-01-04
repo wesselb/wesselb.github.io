@@ -15,13 +15,13 @@ In this post, we briefly discuss a necessary and sufficient condition for $L^1$-
 **Definition.** A collection of random variables $\mathcal{F}$ is called *uniformly integrable* if
 
 \begin{equation}
-    \lim_{K \to \infty} \sup\,\\\{ \E[\ind_{|X| \ge K} |X|] : X \in \mathcal{F} \\\} \to 0.
+    \lim_{K \to \infty} \sup\,\\\{ \E[\ind_{|X| \ge K} |X|] : X \in \mathcal{F} \\\} = 0.
 \end{equation}
 
 Noting that $\E[\ind_{\abs{X} \ge K} \abs{X}] = \E\abs{X - \ind_{\abs{X} < K} X}$, this condition can also be written as
 
 \begin{equation}
-    \lim_{K \to \infty} \sup\,\\\{ \E\abs{X - \ind_{\abs{X} < K} X} : X \in \mathcal{F} \\\} \to 0.
+    \lim_{K \to \infty} \sup\,\\\{ \E\abs{X - \ind_{\abs{X} < K} X} : X \in \mathcal{F} \\\} = 0.
 \end{equation}
 
 In other words, if $\mathcal{F}$ is uniformly integrable, then you can choose a single value of $K > 0$ such that, uniformly over $X \in \mathcal{F}$, the random variable $\ind_{\abs{X} < K} X$ is a good approximation of $X$ in terms of the $L^1$-norm.
@@ -33,7 +33,7 @@ For a single variable $X$, it is true that
 \begin{equation}
     \E\abs{X} < \infty
     \iff
-    \lim_{K \to \infty} \E[\ind_{|X| \ge K} |X|] \to 0.
+    \lim_{K \to \infty} \E[\ind_{|X| \ge K} |X|] = 0.
 \end{equation}
 Hence, you could call a family of random variables *uniformly* integrable if the limit on the RHS, which is equivalent to integrability, converges uniformly over the family.
 
