@@ -1,9 +1,10 @@
 <li>
     {% if include.file %}
         <a href="{{ include.file | prepend: "/assets/" | prepend:site.baseurl }}">
-    {% endif %}
-    {% if include.url %}
+    {% elsif include.url %}
         <a href="{{ include.url }}">
+    {% else %}
+        <a href="#" onclick="javascript:alert('Available soon!')">
     {% endif %}
         <p class="title">
             {% if include.year %}

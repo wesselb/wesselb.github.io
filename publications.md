@@ -7,6 +7,24 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        authors="Bruinsma W. P., Tégner M., and Turner R. E."
+        year="2022"
+        title="Modelling Non-Smooth Signals with Complex Spectral Structure"
+        note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
+    %}
+    {% include publication_entry.html
+        authors="Coker B., Burt D., Bruinsma W. P., Pan W., Doshi–Velez F."
+        year="2022"
+        title="Wide Mean-Field Bayesian Neural Networks Ignore the Data"
+        note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
+    %}
+    {% include publication_entry.html
+        authors="Markou S., Requeima J. R., Bruinsma W. P., and Turner R. E."
+        year="2022"
+        title="Practical Conditional Neural Processes Via Tractable Dependent Predictions"
+        note="International Conference on Learning Representations (ICLR), 10th"
+    %}
+    {% include publication_entry.html
         file="publications/Markou, 2021, Efficient Gaussian Neural Processes for Regression.pdf"
         authors="Markou S., Requeima J. R., Brunisma W. P., and Turner R. E."
         year="2021"
