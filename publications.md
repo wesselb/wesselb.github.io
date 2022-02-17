@@ -7,7 +7,7 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
-        authors="Bruinsma W. P., Tégner M., and Turner R. E."
+        authors="Bruinsma W. P., Tegnér M., and Turner R. E."
         year="2022"
         title="Modelling Non-Smooth Signals with Complex Spectral Structure"
         note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
