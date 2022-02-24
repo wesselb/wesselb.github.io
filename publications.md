@@ -120,6 +120,11 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="talks/Bruinsma, Meta-Learning as Prediction Map Approximation (Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Meta-Learning as Prediction Map Approximation"
+    %}
+    {% include publication_entry.html
         file="talks/Bruinsma, Cover's Guessing Game (Handout).pdf"
         authors="Bruinsma, W. P."
         title="Cover's Guessing Game"
