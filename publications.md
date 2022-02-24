@@ -122,12 +122,12 @@ title:     "Publications"
     {% include publication_entry.html
         file="talks/Bruinsma, Meta-Learning as Prediction Map Approximation (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Meta-Learning as Prediction Map Approximation"
+        title="Meta-Learning as Prediction Map Approximation (Sheffield Machine Learning Group)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Cover's Guessing Game (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Cover's Guessing Game"
+        title="Cover's Guessing Game (CBL)"
     %}
     {% include publication_entry.html
         url="https://www.youtube.com/watch?v=AIMOmfJInT8"
@@ -142,12 +142,12 @@ title:     "Publications"
     {% include publication_entry.html
         file="talks/Bruinsma, On Sparse Variational Methods and the KL Divergence Between Stochastic Processes (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="On Sparse Variational Methods and the KL Between Stochastic Processes"
+        title="On Sparse Variational Methods and the KL Between Stochastic Processes (GP Reading Group)"
     %}
     {% include publication_entry.html
         file="talks/Hron, Sequential Inference and Decision Making (Handout).pdf"
         authors="Hron J., and Bruinsma, W. P."
-        title="Sequential Inference and Decision Making"
+        title="Sequential Inference and Decision Making (CBL)"
     %}
     {% include publication_entry.html
         url="https://www.youtube.com/watch?v=nq6X-w5xgLo"
@@ -172,52 +172,52 @@ title:     "Publications"
     {% include publication_entry.html
         file="talks/Bruinsma, Compositional Model Design, High-Dimensional Multi-Output Regression (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Compositional Model Design: High-Dimensional Multi-Output Regression"
+        title="Compositional Model Design: High-Dimensional Multi-Output Regression (CBL)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Points and Circles.pdf"
         authors="Bruinsma, W. P."
-        title="Points and Circles"
+        title="Points and Circles (CBL)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Orthogonal Bases for Multi-Output Gaussian Processes (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Orthogonal Bases for Multi-Output Gaussian Processes"
+        title="Orthogonal Bases for Multi-Output Gaussian Processes (CBL)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Topic 4, Spectrum Estimation.pdf"
         authors="Requeima J. R., and Bruinsma, W. P."
-        title="Spectral Methods in Gaussian Modelling: Spectrum Estimation"
+        title="Spectral Methods in Gaussian Modelling: Spectrum Estimation (CSSM 2019)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Topic 3, Variational Inference.pdf"
         authors="Requeima J. R., and Bruinsma, W. P."
-        title="Spectral Methods in Gaussian Modelling: Variational Inference"
+        title="Spectral Methods in Gaussian Modelling: Variational Inference (CSSM 2019)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Topic 2, Kernel Design.pdf"
         authors="Requeima J. R., and Bruinsma, W. P."
-        title="Spectral Methods in Gaussian Modelling: Kernel Design"
+        title="Spectral Methods in Gaussian Modelling: Kernel Design (CSSM 2019)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, A Bayesian Truth Serum.pdf"
         authors="Bruinsma, W. P."
-        title="A Bayesian Truth Serum"
+        title="A Bayesian Truth Serum (CBL)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Agreeing to Disagree.pdf"
         authors="Bruinsma, W. P."
-        title="Agreeing to Disagree"
+        title="Agreeing to Disagree (InveniaCon 2019)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, GPCM.pdf"
         authors="Bruinsma, W. P."
-        title="The Gaussian Process Convolution Model"
+        title="The Gaussian Process Convolution Model (CBL)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Reasoning About The World.pdf"
         authors="Bruinsma, W. P."
-        title="Reasoning About the World"
+        title="Reasoning About the World (InveniaCon 2017)"
     %}
 </ul>
 
