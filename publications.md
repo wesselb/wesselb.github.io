@@ -13,6 +13,7 @@ title:     "Publications"
         note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
     %}
     {% include publication_entry.html
+        file="publications/Coker, 2022, Wide Mean-Field Bayesian Neural Networks Ignore the Data.pdf"
         authors="Coker B., Burt D., Bruinsma W. P., Pan W., Doshi–Velez F."
         year="2022"
         title="Wide Mean-Field Bayesian Neural Networks Ignore the Data"
