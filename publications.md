@@ -7,6 +7,7 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Bruinsma, 2022, Modelling Non-Smooth Signals With Complex Spectral Structure.pdf"
         authors="Bruinsma W. P., Tegnér M., and Turner R. E."
         year="2022"
         title="Modelling Non-Smooth Signals with Complex Spectral Structure"
