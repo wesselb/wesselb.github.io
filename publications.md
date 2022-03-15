@@ -223,8 +223,47 @@ title:     "Publications"
     %}
 </ul>
 
+## Theses
+<ul class="portfolio-list">
+    {% include publication_entry.html
+        file="theses/Bruinsma, 2016, (Thesis) The Generalised Gaussian Process Convolution Model.pdf"
+        authors="Bruinsma, W. P."
+        year="2016"
+        title="The Generalised Gaussian Process Convolution Model"
+        note="Department of Engineering, University of Cambridge. Thesis for the degree Master of Philosophy."
+    %}
+    {% include publication_entry.html
+        file="theses/Bruinsma, 2015, (Thesis) An Extensible Toolkit For Real-Time High-Performance Wideband Spectrum Sensing.pdf"
+        authors="Bruinsma, W. P., Hes, R. P., Kroep, H. J. C., Leliveld, T. C., Melching, W. M., and aan de Wiel, T. A."
+        year="2015"
+        title="An Extensible Toolkit for Real-Time High-Performance Wideband Spectrum Sensing"
+        note="Faculty of Electrical Engineering, Mathematics and Computer Science, Delft University of Technology. Thesis for the degree Bachelor of Science."
+    %}
+</ul>
+
 ## Posters
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="posters/Bruinsma, 2022, (Poster) Modelling Non-Smooth Signals With Complex Spectral Structure.pdf"
+        authors="Bruinsma W. P., Tegnér M., and Turner R. E."
+        year="2022"
+        title="Modelling Non-Smooth Signals with Complex Spectral Structure"
+        note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
+    %}
+    {% include publication_entry.html
+        file="posters/Coker, 2022, (Poster) Wide Mean-Field Bayesian Neural Networks Ignore the Data.pdf"
+        authors="Coker B., Burt D., Bruinsma W. P., Pan W., Doshi–Velez F."
+        year="2022"
+        title="Wide Mean-Field Bayesian Neural Networks Ignore the Data"
+        note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
+    %}
+    {% include publication_entry.html
+        file="posters/Foong, 2021, (Poster) How Tight Can PAC-Bayes be in the Small Data Regime.pdf"
+        authors="Foong, A. Y. K., Bruinsma W. P., Burt D. R., and Turner R. E."
+        year="2021"
+        title="How Tight Can PAC-Bayes be in the Small Data Regime?"
+        note="Advances in Neural Information Processing Systems (NeurIPS), 35th"
+    %}
     {% include publication_entry.html
         file="posters/Foong, 2020, (Poster) Meta-Learning Stationary Stochastic Process Prediction With Convolutional Neural Processes.pdf"
         authors="Foong, A. Y. K., Bruinsma W. P., Gordon. J., Dubois, Y., Requeima J., and Turner R. E."
@@ -252,24 +291,6 @@ title:     "Publications"
         title="Learning with Nonparametric Kernels"
         year="2016"
         note="Industry Session for MPhil in Machine Learning and Machine Intelligence"
-    %}
-</ul>
-
-## Theses
-<ul class="portfolio-list">
-    {% include publication_entry.html
-        file="theses/Bruinsma, 2016, (Thesis) The Generalised Gaussian Process Convolution Model.pdf"
-        authors="Bruinsma, W. P."
-        year="2016"
-        title="The Generalised Gaussian Process Convolution Model"
-        note="Department of Engineering, University of Cambridge. Thesis for the degree Master of Philosophy."
-    %}
-    {% include publication_entry.html
-        file="theses/Bruinsma, 2015, (Thesis) An Extensible Toolkit For Real-Time High-Performance Wideband Spectrum Sensing.pdf"
-        authors="Bruinsma, W. P., Hes, R. P., Kroep, H. J. C., Leliveld, T. C., Melching, W. M., and aan de Wiel, T. A."
-        year="2015"
-        title="An Extensible Toolkit for Real-Time High-Performance Wideband Spectrum Sensing"
-        note="Faculty of Electrical Engineering, Mathematics and Computer Science, Delft University of Technology. Thesis for the degree Bachelor of Science."
     %}
 </ul>
 
