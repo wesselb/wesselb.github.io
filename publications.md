@@ -21,6 +21,7 @@ title:     "Publications"
         note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
     %}
     {% include publication_entry.html
+        file="publications/Markou, 2022, Practical Conditional Neural Processes for Tractable Dependent Predictions.pdf"
         authors="Markou S., Requeima J. R., Bruinsma W. P., and Turner R. E."
         year="2022"
         title="Practical Conditional Neural Processes Via Tractable Dependent Predictions"
