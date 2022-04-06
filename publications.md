@@ -21,7 +21,7 @@ title:     "Publications"
         note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
     %}
     {% include publication_entry.html
-        file="publications/Markou, 2022, Practical Conditional Neural Processes for Tractable Dependent Predictions.pdf"
+        file="publications/Markou, 2022, Practical Conditional Neural Processes Via Tractable Dependent Predictions.pdf"
         authors="Markou S., Requeima J. R., Bruinsma W. P., and Turner R. E."
         year="2022"
         title="Practical Conditional Neural Processes Via Tractable Dependent Predictions"
@@ -257,6 +257,13 @@ title:     "Publications"
         year="2022"
         title="Wide Mean-Field Bayesian Neural Networks Ignore the Data"
         note="Artificial Intelligence and Statistics (AISTATS), 25th International Conference on"
+    %}
+    {% include publication_entry.html
+        file="posters/Markou, 2022, (Poster) Practical Conditional Neural Processes Via Tractable Dependent Predictions.pdf"
+        authors="Markou S., Requeima J. R., Bruinsma W. P., and Turner R. E."
+        year="2022"
+        title="Practical Conditional Neural Processes Via Tractable Dependent Predictions"
+        note="International Conference on Learning Representations (ICLR), 10th"
     %}
     {% include publication_entry.html
         file="posters/Foong, 2021, (Poster) How Tight Can PAC-Bayes be in the Small Data Regime.pdf"
