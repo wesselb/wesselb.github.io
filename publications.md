@@ -7,6 +7,13 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Foong, 2022, A Note on the Chernoff Bound for Random Variables in the Unit Interval.pdf"
+        authors="Foong, Y. K., Bruinsma W. P., and Burt D."
+        year="2022"
+        title="A Note on the Chernoff Bound for Random Variables in the Unit Interval"
+        note="arXiv:2205.07880"
+    %}
+    {% include publication_entry.html
         file="publications/Bruinsma, 2022, Modelling Non-Smooth Signals With Complex Spectral Structure.pdf"
         authors="Bruinsma W. P., Tegnér M., and Turner R. E."
         year="2022"

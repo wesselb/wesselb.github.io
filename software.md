@@ -25,6 +25,12 @@ title:     "Software"
         badge_stars="wesselb/NeuralProcesses.jl"
     %}
     {% include project_entry.html
+        title="Neural Processes"
+        link="https://github.com/wesselb/neuralprocesses"
+        description="A framework for composing Neural Processes in Python"
+        badge_stars="wesselb/neuralprocesses"
+    %}
+    {% include project_entry.html
         title="Convolutional Conditional Neural Processes"
         link="https://github.com/cambridge-mlg/convcnp"
         description="Implementation of the ConvCNP in Python"
