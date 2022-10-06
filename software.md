@@ -19,7 +19,7 @@ title:     "Software"
         badge_stars="wesselb/gpar"
     %}
     {% include project_entry.html
-        title="Neural Processes"
+        title="NeuralProcesses.jl"
         link="https://github.com/wesselb/NeuralProcesses.jl"
         description="A framework for composing Neural Processes in Julia"
         badge_stars="wesselb/NeuralProcesses.jl"

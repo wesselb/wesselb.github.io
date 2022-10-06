@@ -7,6 +7,13 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Rawat, 2022, Challenges and Pitfalls of Bayesian Unlearning.pdf"
+        authors="Rawat A., Requeima J. R., Brunisma W. P., and Turner R. E."
+        year="2022"
+        title="Challenges and Pitfalls of Bayesian Unlearning"
+        note="Updatable Machine Learning (UpML), ICML 2022 Workshop on"
+    %}
+    {% include publication_entry.html
         file="publications/Foong, 2022, A Note on the Chernoff Bound for Random Variables in the Unit Interval.pdf"
         authors="Foong, Y. K., Bruinsma W. P., and Burt D."
         year="2022"
