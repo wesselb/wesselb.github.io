@@ -7,8 +7,15 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Lalchand, 2022, Sparse Gaussian Process Hyperparameters, Optimize or Integrate.pdf"
+        authors="Lalchand V., Bruinsma W. P., Burt D. R., and Rasmussen, C. E."
+        year="2022"
+        title="Sparse Gaussian Process Hyperparameters: Optimize or Integrate?"
+        note="Advances in Neural Information Processing Systems (NeurIPS), 36th"
+    %}
+    {% include publication_entry.html
         file="publications/Rawat, 2022, Challenges and Pitfalls of Bayesian Unlearning.pdf"
-        authors="Rawat A., Requeima J. R., Brunisma W. P., and Turner R. E."
+        authors="Rawat A., Requeima J. R., Bruinsma W. P., and Turner R. E."
         year="2022"
         title="Challenges and Pitfalls of Bayesian Unlearning"
         note="Updatable Machine Learning (UpML), ICML 2022 Workshop on"
