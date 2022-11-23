@@ -7,6 +7,13 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Andersson, 2022, Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement.pdf"
+        authors="Andersson, T. R., Bruinsma, W. P., Markou, S., Requeima, J., Coca-Castro, A., Vaughan, A., Ellis, A.-L., Lazzara, M., Jones, D. C., Hosking, J. S., and Turner R. E."
+        year="2022"
+        title="Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement"
+        note="Gaussian Processes, Spatiotemporal Modeling, and Decision-Making Systems (GPSMDS), NeurIPS 2022 Workshop on"
+    %}
+    {% include publication_entry.html
         file="publications/Lalchand, 2022, Sparse Gaussian Process Hyperparameters, Optimize or Integrate.pdf"
         authors="Lalchand V., Bruinsma W. P., Burt D. R., and Rasmussen, C. E."
         year="2022"
