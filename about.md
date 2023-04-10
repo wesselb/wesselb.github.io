@@ -11,7 +11,7 @@ title:     "About"
       --><a href="https://github.com/wesselb" id="github"></a><!--
       --><a href="https://scholar.google.co.uk/citations?user=QRQwz3cAAAAJ" id="scholar"></a><!--
       --><a href="https://linkedin.com/in/wessel-bruinsma" id="linkedin"></a><!--
-      --><img alt="Wessel" src="{{ site.baseurl }}/assets/images/me.png"><!--
+      --><img alt="Wessel" src="{{ site.baseurl }}/assets/images/wessel.jpg"><!--
 --></aside>
 
 Hey, 👋🏼!
