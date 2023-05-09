@@ -8,7 +8,7 @@ title:     "Publications"
 <ul class="portfolio-list">
     {% include publication_entry.html
         file="publications/Bruinsma, 2023, Autoregressive Conditional Neural Processes.pdf"
-        authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
+        authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
         year="2023"
         title="Autoregressive Conditional Neural Processes"
         note="International Conference on Representation Learning (ICLR), 11th"
@@ -158,6 +158,16 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        url="https://www.youtube.com/watch?v=93ZliHS0qBk"
+        authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
+        title="Autoregressive Conditional Neural Processes (ICLR 2023) <span class=\"tag\">video</span>"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Autoregressive Conditional Neural Processes (Handout).pdf"
+        authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
+        title="Autoregressive Conditional Neural Processes (ICLR 2023)"
+    %}
+    {% include publication_entry.html
         file="talks/Bruinsma, Meta-Learning as Prediction Map Approximation (Handout).pdf"
         authors="Bruinsma, W. P."
         title="Meta-Learning as Prediction Map Approximation (Sheffield Machine Learning Group)"
@@ -279,6 +289,13 @@ title:     "Publications"
 
 ## Posters
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="posters/Bruinsma, 2023, (Poster) Autoregressive Conditional Neural Processes.pdf"
+        authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
+        year="2023"
+        title="Autoregressive Conditional Neural Processes"
+        note="International Conference on Representation Learning (ICLR), 11th"
+    %}
     {% include publication_entry.html
         file="posters/Bruinsma, 2022, (Poster) Modelling Non-Smooth Signals With Complex Spectral Structure.pdf"
         authors="Bruinsma, W. P., Tegnér, M., and Turner, R. E."
