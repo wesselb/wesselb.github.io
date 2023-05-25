@@ -171,7 +171,7 @@ title:     "Publications"
         url="https://youtu.be/v0pmqh09u1Y"
         authors="Andersson, T. R., Bruinsma, W. P., Markou, S., Requeima, J., Coca-Castro, A., Vaughan, A., Ellis, A.-L., Lazzara, M., Jones, D. C., Hosking, J. S., and Turner, R. E."
         year="2023"
-        title="Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement <span class=\"tag\">"
+        title="Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement <span class=\"tag\">video</span>"
         note="Environmental Data Science (Climate Informatics 2023 Special Issue)"
     %}
     {% include publication_entry.html
