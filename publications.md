@@ -14,11 +14,11 @@ title:     "Publications"
         note="International Conference on Representation Learning (ICLR), 11th"
     %}
     {% include publication_entry.html
-        file="publications/Andersson, 2022, Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement.pdf"
+        file="publications/Andersson, 2023, Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement.pdf"
         authors="Andersson, T. R., Bruinsma, W. P., Markou, S., Requeima, J., Coca-Castro, A., Vaughan, A., Ellis, A.-L., Lazzara, M., Jones, D. C., Hosking, J. S., and Turner, R. E."
-        year="2022"
+        year="2023"
         title="Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement"
-        note="Gaussian Processes, Spatiotemporal Modeling, and Decision-Making Systems (GPSMDS), NeurIPS 2022 Workshop on"
+        note="Environmental Data Science (Climate Informatics 2023 Special Issue)"
     %}
     {% include publication_entry.html
         file="publications/Lalchand, 2022, Sparse Gaussian Process Hyperparameters, Optimize or Integrate.pdf"
@@ -166,6 +166,13 @@ title:     "Publications"
         file="talks/Bruinsma, Autoregressive Conditional Neural Processes (Handout).pdf"
         authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
         title="Autoregressive Conditional Neural Processes (ICLR 2023)"
+    %}
+    {% include publication_entry.html
+        url="https://youtu.be/v0pmqh09u1Y"
+        authors="Andersson, T. R., Bruinsma, W. P., Markou, S., Requeima, J., Coca-Castro, A., Vaughan, A., Ellis, A.-L., Lazzara, M., Jones, D. C., Hosking, J. S., and Turner, R. E."
+        year="2023"
+        title="Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement <span class=\"tag\">"
+        note="Environmental Data Science (Climate Informatics 2023 Special Issue)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Meta-Learning as Prediction Map Approximation (Handout).pdf"
