@@ -230,7 +230,7 @@ title:     "Publications"
         title="Compositional Model Design: High-Dimensional Multi-Output Regression (CBL)"
     %}
     {% include publication_entry.html
-        file="talks/Bruinsma, Points and Circles.pdf"
+        file="talks/Bruinsma, Points and Circles (Handout).pdf"
         authors="Bruinsma, W. P."
         title="Points and Circles (CBL)"
     %}
