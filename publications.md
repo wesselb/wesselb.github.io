@@ -158,121 +158,172 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="talks/Bruinsma, Autoregressive Conditional Neural Processes (MLLS) (Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Autoregressive Conditional Neural Processes"
+        year="2023"
+        note="Center for Basic Machine Learing in Life Sciences (MLLS), University of Copenhagen"
+    %}
+    {% include publication_entry.html
         url="https://www.youtube.com/watch?v=93ZliHS0qBk"
         authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
-        title="Autoregressive Conditional Neural Processes (ICLR 2023) <span class=\"tag\">video</span>"
+        title="Autoregressive Conditional Neural Processes <span class=\"tag\">video</span>"
+        year="2023"
+        note="International Conference on Representation Learning (ICLR), 11th"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Autoregressive Conditional Neural Processes (Handout).pdf"
         authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
-        title="Autoregressive Conditional Neural Processes (ICLR 2023)"
+        title="Autoregressive Conditional Neural Processes"
+        year="2023"
+        note="International Conference on Representation Learning (ICLR), 11th"
     %}
     {% include publication_entry.html
         url="https://youtu.be/v0pmqh09u1Y"
         authors="Andersson, T. R., Bruinsma, W. P., Markou, S., Requeima, J., Coca-Castro, A., Vaughan, A., Ellis, A.-L., Lazzara, M., Jones, D. C., Hosking, J. S., and Turner, R. E."
-        year="2023"
         title="Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement <span class=\"tag\">video</span>"
+        year="2023"
         note="Environmental Data Science (Climate Informatics 2023 Special Issue)"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Meta-Learning as Prediction Map Approximation (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Meta-Learning as Prediction Map Approximation (Sheffield Machine Learning Group)"
+        title="Meta-Learning as Prediction Map Approximation"
+        year="2023"
+        note="Sheffield Machine Learning Group, University of Sheffield"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Cover's Guessing Game (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Cover's Guessing Game (CBL)"
+        title="Cover's Guessing Game"
+        year="2021"
+        note="Computational and Biological Learning Lab, University of Cambridge"
     %}
     {% include publication_entry.html
         url="https://www.youtube.com/watch?v=AIMOmfJInT8"
         authors="Bruinsma, W. P., Requeima, J., Foong, A. Y. K., Gordon, J., and Turner, R. E."
-        title="The Gaussian Neural Process (AABI 2020) <span class=\"tag\">video</span>"
+        title="The Gaussian Neural Process <span class=\"tag\">video</span>"
+        year="2020"
+        note="Advances in Approximate Bayesian Inference (AABI), 3rd Symposium on"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, The Gaussian Neural Process (Handout).pdf"
         authors="Bruinsma, W. P., Requeima J., Foong, A. Y. K., Gordon, J., and Turner, R. E."
-        title="The Gaussian Neural Process (AABI 2020)"
+        title="The Gaussian Neural Process"
+        year="2020"
+        note="Advances in Approximate Bayesian Inference (AABI), 3rd Symposium on"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, On Sparse Variational Methods and the KL Divergence Between Stochastic Processes (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="On Sparse Variational Methods and the KL Between Stochastic Processes (GP Reading Group)"
+        title="On Sparse Variational Methods and the KL Between Stochastic Processes"
+        year="2020"
+        note="Gaussian Process Reading Group"
     %}
     {% include publication_entry.html
         file="talks/Hron, Sequential Inference and Decision Making (Handout).pdf"
         authors="Hron, J. and Bruinsma, W. P."
-        title="Sequential Inference and Decision Making (CBL)"
+        title="Sequential Inference and Decision Making"
+        year="2020"
+        note="Computational and Biological Learning Lab, University of Cambridge"
     %}
     {% include publication_entry.html
         url="https://www.youtube.com/watch?v=nq6X-w5xgLo"
         authors="Bruinsma, W. P., Gordon, J., and Turner, R. E."
-        title="NeuralProcesses.jl: Composing Neural Processes with Flux (JuliaCon 2020) <span class=\"tag\">video</span>"
+        title="NeuralProcesses.jl: Composing Neural Processes with Flux <span class=\"tag\">video</span>"
+        year="2020"
+        note="JuliaCon"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, NeuralProcesses.jl.pdf"
         authors="Bruinsma, W. P., Gordon, J., and Turner, R. E."
-        title="NeuralProcesses.jl: Composing Neural Processes with Flux (JuliaCon 2020)"
+        title="NeuralProcesses.jl: Composing Neural Processes with Flux"
+        year="2020"
+        note="JuliaCon"
     %}
     {% include publication_entry.html
         url="https://www.youtube.com/watch?v=OJmkz2LAM4Q"
         authors="Bruinsma, W. P., Perim, E., Tebbutt, W., Hosking, J. S., Solin, A., and Turner, R. E."
-        title="Scalable Exact Inference in Multi-Output Gaussian Processes (ICML 2020) <span class=\"tag\">video</span>"
+        title="Scalable Exact Inference in Multi-Output Gaussian Processes <span class=\"tag\">video</span>"
+        year="2020"
+        note="International Conference on Machine Learning (ICML), 37th"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Scalable Exact Inference in Multi-Output Gaussian Processes (Handout).pdf"
         authors="Bruinsma, W. P., Perim E., Tebbutt, W., Hosking, J. S., Solin, A., and Turner, R. E."
-        title="Scalable Exact Inference in Multi-Output Gaussian Processes (ICML 2020)"
+        title="Scalable Exact Inference in Multi-Output Gaussian Processes"
+        year="2020"
+        note="International Conference on Machine Learning (ICML), 37th"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Compositional Model Design, High-Dimensional Multi-Output Regression (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Compositional Model Design: High-Dimensional Multi-Output Regression (CBL)"
+        title="Compositional Model Design: High-Dimensional Multi-Output Regression"
+        year="2020"
+        note="Computational and Biological Learning Lab, University of Cambridge"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Points and Circles (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Points and Circles (CBL)"
+        title="Points and Circles"
+        year="2020"
+        note="Computational and Biological Learning Lab, University of Cambridge"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Orthogonal Bases for Multi-Output Gaussian Processes (Handout).pdf"
         authors="Bruinsma, W. P."
-        title="Orthogonal Bases for Multi-Output Gaussian Processes (CBL)"
+        title="Orthogonal Bases for Multi-Output Gaussian Processes"
+        year="2019"
+        note="Computational and Biological Learning Lab, University of Cambridge"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Topic 4, Spectrum Estimation.pdf"
         authors="Requeima, J. R. and Bruinsma, W. P."
-        title="Spectral Methods in Gaussian Modelling: Spectrum Estimation (CSSM 2019)"
+        title="Spectral Methods in Gaussian Modelling: Spectrum Estimation"
+        year="2019"
+        note="Complex Systems Spectral Methods"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Topic 3, Variational Inference.pdf"
         authors="Requeima, J. R. and Bruinsma, W. P."
-        title="Spectral Methods in Gaussian Modelling: Variational Inference (CSSM 2019)"
+        title="Spectral Methods in Gaussian Modelling: Variational Inference"
+        year="2019"
+        note="Complex Systems Spectral Methods"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Topic 2, Kernel Design.pdf"
         authors="Requeima, J. R. and Bruinsma, W. P."
-        title="Spectral Methods in Gaussian Modelling: Kernel Design (CSSM 2019)"
+        title="Spectral Methods in Gaussian Modelling: Kernel Design"
+        year="2019"
+        note="Complex Systems Spectral Methods"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, A Bayesian Truth Serum.pdf"
         authors="Bruinsma, W. P."
-        title="A Bayesian Truth Serum (CBL)"
+        title="A Bayesian Truth Serum"
+        year="2019"
+        note="Computational and Biological Learning Lab, University of Cambridge"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Agreeing to Disagree.pdf"
         authors="Bruinsma, W. P."
-        title="Agreeing to Disagree (InveniaCon 2019)"
+        title="Agreeing to Disagree"
+        year="2019"
+        note="InveniaCon"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, GPCM.pdf"
         authors="Bruinsma, W. P."
-        title="The Gaussian Process Convolution Model (CBL)"
+        title="The Gaussian Process Convolution Model"
+        year="2019"
+        note="Computational and Biological Learning Lab, University of Cambridge"
     %}
     {% include publication_entry.html
         file="talks/Bruinsma, Reasoning About The World.pdf"
         authors="Bruinsma, W. P."
-        title="Reasoning About the World (InveniaCon 2017)"
+        title="Reasoning About the World"
+        year="2017"
+        note="InveniaCon"
     %}
 </ul>
 
