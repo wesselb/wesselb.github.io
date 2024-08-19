@@ -7,6 +7,48 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Ashman, 2024, Approximately Equivariant Neural Processes.pdf"
+        authors="Ashman, M., Diaconu, C., Weller, A., Bruinsma, W. P., and Turner, R. E."
+        year="2024"
+        title="Approximately Equivariant Neural Processes"
+        note="arXiv preprint: 2406.13488"
+    %}
+    {% include publication_entry.html
+        file="publications/Raisa, 2024, Noise-Aware Differentially Private Regression via Meta-Learning.pdf"
+        authors="Räisä, O., Markou, S., Ashman, M., Bruinsma, W. P., Tobaben, M., Honkela, A., and Turner, R. E."
+        year="2024"
+        title="Noise-Aware Differentially Private Regression via Meta-Learning"
+        note="arXiv preprint: 2406.08569"
+    %}
+    {% include publication_entry.html
+        file="publications/Chien, 2024, Safe Exploration in Dose Finding Clinical Trials with Heterogeneous Participants.pdf"
+        authors="Chien, I., Bruinsma, W. P., Gonzalez, J., and Turner, R. E."
+        year="2024"
+        title="Safe Exploration in Dose Finding Clinical Trials with Heterogeneous Participants"
+        note="International Conference on Machine Learning (ICML), 41th"
+    %}
+    {% include publication_entry.html
+        file="publications/Ashman, 2024, Translation-Equivariant Transformer Neural Processes.pdf"
+        authors="Ashman, M., Diaconu, C., Kim, J., Sivaraya, J., Markou, S., Requeima, J., Bruinsma, W. P., and Turner, R. E."
+        year="2024"
+        title="Translation-Equivariant Transformer Neural Processes"
+        note="International Conference on Machine Learning (ICML), 41th"
+    %}
+    {% include publication_entry.html
+        file="publications/Bodnar, 2024, Aurora, A Foundation Model of the Atmosphere.pdf"
+        authors="Bodnar, C., Bruinsma, W. P., Lucic, A., Stanley, M., Brandstetter, J., Garvan, J., Riechert, M., Weyn, J., Dong, H., Vaughan, A., Gupta, J. K., Tambiratnam, K.,  Archibald, A., Heider, E., Welling, M., Turner, R. E., Perdikaris, P."
+        year="2024"
+        title="Aurora: A Foundation Model of the Atmosphere"
+        note="arXiv preprint: 2405.13063"
+    %}
+    {% include publication_entry.html
+        file="publications/Vaughan, 2024, Aardvark Weather, End-to-End Data-Driven Weather Forecasting.pdf"
+        authors="Vaughan, A., Markou, S., Tebbutt, W., Requeima, J., Bruinsma, W. P., Andersson, T. R., Herzog, M., Lane, N. D., Chantry, M., Hosking, J. S., and Turner, R. E."
+        year="2024"
+        title="Aardvark Weather: End-to-End Data-Driven Weather Forecasting"
+        note="arXiv preprint: 2404.00411"
+    %}
+    {% include publication_entry.html
         file="publications/Bruinsma, 2023, Autoregressive Conditional Neural Processes.pdf"
         authors="Bruinsma, W. P., Markou, S., Requeima, J., Foong, A. Y. K., Andersson, T. R., Vaughan, A., Anthony, B., Hosking, J. S., and Turner, R. E."
         year="2023"
@@ -14,11 +56,11 @@ title:     "Publications"
         note="International Conference on Representation Learning (ICLR), 11th"
     %}
     {% include publication_entry.html
-        file="publications/Andersson, 2023, Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement.pdf"
+        file="publications/Andersson, 2023, Environmental Sensor Placement with Convolutional Gaussian Neural Processes.pdf"
         authors="Andersson, T. R., Bruinsma, W. P., Markou, S., Requeima, J., Coca-Castro, A., Vaughan, A., Ellis, A.-L., Lazzara, M., Jones, D. C., Hosking, J. S., and Turner, R. E."
         year="2023"
-        title="Active Learning With Convolutional Gaussian Neural Processes For Environmental Sensor Placement"
-        note="Environmental Data Science (Climate Informatics 2023 Special Issue)"
+        title="Environmental Sensor Placement with Convolutional Gaussian Neural Processes"
+        note="Environmental Data Science 2"
     %}
     {% include publication_entry.html
         file="publications/Lalchand, 2022, Sparse Gaussian Process Hyperparameters, Optimize or Integrate.pdf"
@@ -329,6 +371,13 @@ title:     "Publications"
 
 ## Theses
 <ul class="portfolio-list">
+    {% include publication_entry.html
+        file="theses/Bruinsma, 2022, (Thesis) Convolutional Conditional Neural Processes.pdf"
+        authors="Bruinsma, W. P."
+        year="2022"
+        title="Convolutional Conditional Neural Processes"
+        note="Department of Engineering, University of Cambridge. Thesis for the degree Doctor of Philosophy."
+    %}
     {% include publication_entry.html
         file="theses/Bruinsma, 2016, (Thesis) The Generalised Gaussian Process Convolution Model.pdf"
         authors="Bruinsma, W. P."
