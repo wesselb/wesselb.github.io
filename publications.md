@@ -203,7 +203,7 @@ title:     "Publications"
         file="talks/Bruinsma, Autoregressive Conditional Neural Processes (MLLS) (Handout).pdf"
         authors="Bruinsma, W. P."
         title="Autoregressive Conditional Neural Processes"
-        year="2023"
+        year="2024"
         note="Center for Basic Machine Learing in Life Sciences (MLLS), University of Copenhagen"
     %}
     {% include publication_entry.html
