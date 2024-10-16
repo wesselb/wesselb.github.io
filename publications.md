@@ -200,6 +200,13 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="talks/Bruinsma, Foundation Models for Earth Systems (Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Foundation Models for Earth Systems"
+        year="2024"
+        note="The Lorentz Center Workshop: Advancing Ecosystem Carbon Flux Research"
+    %}
+    {% include publication_entry.html
         file="talks/Bruinsma, Autoregressive Conditional Neural Processes (MLLS) (Handout).pdf"
         authors="Bruinsma, W. P."
         title="Autoregressive Conditional Neural Processes"

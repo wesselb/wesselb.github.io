@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "A Short Note on Uniform Integrability"
-tags:        [probability theory]
+tags:        [probability theory, math]
 comments:    true
 ---
 
