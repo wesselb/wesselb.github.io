@@ -35,10 +35,10 @@ title:     "Publications"
         note="International Conference on Machine Learning (ICML), 41th"
     %}
     {% include publication_entry.html
-        file="publications/Bodnar, 2024, Aurora, A Foundation Model of the Atmosphere.pdf"
-        authors="Bodnar, C., Bruinsma, W. P., Lucic, A., Stanley, M., Brandstetter, J., Garvan, J., Riechert, M., Weyn, J., Dong, H., Vaughan, A., Gupta, J. K., Tambiratnam, K.,  Archibald, A., Heider, E., Welling, M., Turner, R. E., Perdikaris, P."
+        file="publications/Bodnar, 2024, A Foundation Model for the Earth System.pdf"
+        authors="Bodnar, C., Bruinsma, W. P., Lucic, A., Stanley, M., Vaughan, A., Brandstetter, J., Garvan, J., Riechert, M., Weyn, J., Dong, H., Gupta, J. K., Tambiratnam, K., Archibald, A., Wuh, C., Heider, E., Welling, M., Turner, R. E., Perdikaris, P."
         year="2024"
-        title="Aurora: A Foundation Model of the Atmosphere"
+        title="A Foundation Model for the Earth System"
         note="arXiv preprint: 2405.13063"
     %}
     {% include publication_entry.html

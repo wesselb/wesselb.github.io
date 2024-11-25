@@ -13,6 +13,12 @@ title:     "Software"
         badge_stars="wesselb/stheno"
     %}
     {% include project_entry.html
+        title="Aurora"
+        link="https://github.com/microsoft/aurora"
+        description="Implementation of the Aurora model for Earth system forecasting"
+        badge_stars="microsoft/aurora"
+    %}
+    {% include project_entry.html
         title="Gaussian Process Autoregressive Regression Model"
         link="https://github.com/wesselb/gpar"
         description="Implementation of GPAR in Python"
