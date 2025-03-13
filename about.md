@@ -21,9 +21,9 @@ The mission of the AI for Science initiative is to apply the full breadth of mac
 My team does research into foundation models for atmospheric modelling. 
 We developed [the Aurora model](https://arxiv.org/abs/2405.13063), and recently released an [open-source version of the model](https://github.com/microsoft/aurora) too.
 
-I hold a PhD in Machine from the University of Cambridge, supervised by [Dr Richard Turner](http://cbl.eng.cam.ac.uk/Public/Turner/Turner),
-an MPhil in [Machine Learning and Machine Intelligence](http://www.mlsalt.eng.cam.ac.uk/) from the University of Cambridge,
-and a BSc in [Electrical Engineering](https://www.tudelft.nl/en/education/programmes/bachelors/ee/bachelor-of-electrical-engineering/) from the University of Delft.
+I hold a PhD in Machine from the University of Cambridge, supervised by [Dr Richard Turner](https://rich-turner-group.github.io/),
+an MPhil in [Machine Learning and Machine Intelligence](https://www.mlmi.eng.cam.ac.uk/) from the University of Cambridge,
+and a BSc in [Electrical Engineering](https://www.tudelft.nl/en/onderwijs/opleidingen/bachelors/electrical-engineering/bsc-electrical-engineering) from the University of Delft.
 My curriculum vitae can be found [here](/assets/cv.pdf).
 
 My research interests include machine learning for environmental science and forecasting,
