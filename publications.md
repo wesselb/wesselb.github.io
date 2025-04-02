@@ -7,6 +7,20 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Allen, 2025, End-to-End Data-Driven Weather Prediction.pdf"
+        authors="Allen, A., Markou, S., Tebbutt, W., Requeima, J., Bruinsma, W. P., Andersson, T. R., Herzog, M., Lane, N. D., Chantry, M., Hosking, J. S., and Turner, R. E."
+        year="2025"
+        title="End-to-End Data-Driven Weather Prediction"
+        note="Nature"
+    %}
+    {% include publication_entry.html
+        file="publications/Selz, 2025, On the Effective Resolution of AI Weather Prediction Models.pdf"
+        authors="Selz, T., Bruinsma, W., Craig, G. C., Markou, S., Turner, R. E., Vaughan, A."
+        year="2025"
+        title="On the Effective Resolution of AI Weather Prediction Models"
+        note="preprint"
+    %}
+    {% include publication_entry.html
         file="publications/Ashman, 2024, Approximately Equivariant Neural Processes.pdf"
         authors="Ashman, M., Diaconu, C., Weller, A., Bruinsma, W. P., and Turner, R. E."
         year="2024"
@@ -40,13 +54,6 @@ title:     "Publications"
         year="2024"
         title="A Foundation Model for the Earth System"
         note="arXiv preprint: 2405.13063"
-    %}
-    {% include publication_entry.html
-        file="publications/Vaughan, 2024, Aardvark Weather, End-to-End Data-Driven Weather Forecasting.pdf"
-        authors="Vaughan, A., Markou, S., Tebbutt, W., Requeima, J., Bruinsma, W. P., Andersson, T. R., Herzog, M., Lane, N. D., Chantry, M., Hosking, J. S., and Turner, R. E."
-        year="2024"
-        title="Aardvark Weather: End-to-End Data-Driven Weather Forecasting"
-        note="arXiv preprint: 2404.00411"
     %}
     {% include publication_entry.html
         file="publications/Bruinsma, 2023, Autoregressive Conditional Neural Processes.pdf"
