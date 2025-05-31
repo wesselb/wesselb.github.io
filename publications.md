@@ -7,6 +7,13 @@ title:     "Publications"
 ## Papers
 <ul class="portfolio-list">
     {% include publication_entry.html
+        file="publications/Bodnar, 2025, A Foundation Model for the Earth System.pdf"
+        authors="Bodnar, C., Bruinsma, W. P., Lucic, A., Stanley, M., Allen, A., Brandstetter, J., Garvan, J., Riechert, M., Weyn, J., Dong, H., Gupta, J. K., Tambiratnam, K., Archibald, A., Wu, C., Heider, E., Welling, M., Turner, R. E., Perdikaris, P."
+        year="2025"
+        title="A Foundation Model for the Earth System"
+        note="Nature"
+    %}
+    {% include publication_entry.html
         file="publications/Allen, 2025, End-to-End Data-Driven Weather Prediction.pdf"
         authors="Allen, A., Markou, S., Tebbutt, W., Requeima, J., Bruinsma, W. P., Andersson, T. R., Herzog, M., Lane, N. D., Chantry, M., Hosking, J. S., and Turner, R. E."
         year="2025"
@@ -25,14 +32,14 @@ title:     "Publications"
         authors="Ashman, M., Diaconu, C., Weller, A., Bruinsma, W. P., and Turner, R. E."
         year="2024"
         title="Approximately Equivariant Neural Processes"
-        note="arXiv preprint: 2406.13488"
+        note="Advances in Neural Information Processing Systems (NeurIPS), 37th"
     %}
     {% include publication_entry.html
         file="publications/Raisa, 2024, Noise-Aware Differentially Private Regression via Meta-Learning.pdf"
         authors="Räisä, O., Markou, S., Ashman, M., Bruinsma, W. P., Tobaben, M., Honkela, A., and Turner, R. E."
         year="2024"
         title="Noise-Aware Differentially Private Regression via Meta-Learning"
-        note="arXiv preprint: 2406.08569"
+        note="Advances in Neural Information Processing Systems (NeurIPS), 37th"
     %}
     {% include publication_entry.html
         file="publications/Chien, 2024, Safe Exploration in Dose Finding Clinical Trials with Heterogeneous Participants.pdf"
@@ -47,13 +54,6 @@ title:     "Publications"
         year="2024"
         title="Translation-Equivariant Transformer Neural Processes"
         note="International Conference on Machine Learning (ICML), 41th"
-    %}
-    {% include publication_entry.html
-        file="publications/Bodnar, 2024, A Foundation Model for the Earth System.pdf"
-        authors="Bodnar, C., Bruinsma, W. P., Lucic, A., Stanley, M., Vaughan, A., Brandstetter, J., Garvan, J., Riechert, M., Weyn, J., Dong, H., Gupta, J. K., Tambiratnam, K., Archibald, A., Wuh, C., Heider, E., Welling, M., Turner, R. E., Perdikaris, P."
-        year="2024"
-        title="A Foundation Model for the Earth System"
-        note="arXiv preprint: 2405.13063"
     %}
     {% include publication_entry.html
         file="publications/Bruinsma, 2023, Autoregressive Conditional Neural Processes.pdf"
