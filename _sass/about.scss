@@ -6,26 +6,25 @@ article {
         margin: .5em 0 1em 2em;
         padding: 0;
         float: right;
-        width: 17.5em;  // 3 * 6 - 0.5 = 17.5
+        width: 17em;  // 2 * 7 + 0.5 * 6 = 17 
 
         // Scale down a bit on small screens.
         @media only screen and (max-width: 600px) { font-size: 0.8em; }
 
         // Image
         img {
-            width: 17.5em;
+            width: 17em;
             margin: 0;
-            margin-top: 1em;
         }
 
         // A button to a service
         a {
             display: inline-block;
-            height: 2em;
-            width: 2.5em;
+            height: 1.5em;
+            width: 2em;
             border-radius: 5px;
-            background-size: 1.5em 1.5em;
-            background-position: 0.5em 0.25em;
+            background-size: 1.25em 1.25em;
+            background-position: 0.375em 0.125em;
             background-repeat: no-repeat;
             background-color: $dark;
             &:hover { background-color: $light; }
@@ -44,6 +43,8 @@ article {
                    &:hover { background-image: url($baseurl + '/assets/images/icons8-github-blue.png'); } }
             &#twitter { background-image: url($baseurl + '/assets/images/icons8-twitter-white.png');
                    &:hover { background-image: url($baseurl + '/assets/images/icons8-twitter-blue.png'); } }
+            &#bluesky { background-image: url($baseurl + '/assets/images/icons8-butterfly-white.png');
+                   &:hover { background-image: url($baseurl + '/assets/images/icons8-butterfly-blue.png'); } }
             &#linkedin { background-image: url($baseurl + '/assets/images/icons8-linkedin-white.png');
                    &:hover { background-image: url($baseurl + '/assets/images/icons8-linkedin-blue.png'); } }
         }

@@ -1,3 +1,5 @@
+*.swp
+
 # Jekyll stuff
 .sass-cache
 _site

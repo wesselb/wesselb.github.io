@@ -207,7 +207,49 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
-        file="talks/Bruinsma, Foundation Models for Earth Systems (Handout).pdf"
+        file="talks/Bruinsma, Aurora, A Foundation Model for the Earth System (UCL AI Centre, Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Aurora: A Foundation Model for the Earth System"
+        year="2025"
+        note="UCL AI Centre, London"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Aurora, A Foundation Model for the Earth System (USGS, Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Aurora: A Foundation Model for the Earth System"
+        year="2025"
+        note="CDI AI/ML Webinar, US Geological Survey, Online"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Aurora, A Foundation Model for the Earth System (AI4X, Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Aurora: A Foundation Model for the Earth System <span class=\"tag\">plenary</span>"
+        year="2025"
+        note="AI4X 2025"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Aurora, A Foundation Model for the Earth System (RMetS, Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Aurora: A Foundation Model for the Earth System <span class=\"tag\">keynote</span>"
+        year="2025"
+        note="RMetS Early Careers and Student Conference 2025"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Aurora, A Foundation Model for the Earth System (SLAC, Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Aurora: A Foundation Model for the Earth System"
+        year="2025"
+        note="Statistical Learning in Atmospheric Chemistry (SLAC) Community, Online"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Aurora, A Foundation Model for the Earth System (KNMI, Handout).pdf"
+        authors="Bruinsma, W. P."
+        title="Aurora: A Foundation Model for the Earth System"
+        year="2025"
+        note="Building a Dutch AI-Earth System Modeling Community, KNMI, De Bilt"
+    %}
+    {% include publication_entry.html
+        file="talks/Bruinsma, Foundation Models for Earth Systems (Lorentz, Handout).pdf"
         authors="Bruinsma, W. P."
         title="Foundation Models for Earth Systems"
         year="2024"
