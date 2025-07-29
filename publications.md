@@ -207,7 +207,7 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
-        url="https://m.youtube.com/watch?v=SbLQsl13T7A"
+        url="https://youtube.com/watch?v=SbLQsl13T7A"
         authors="Bruinsma, W. P."
         title="Aurora: A Foundation Model for the Earth System <span class=\"tag\">video</span>"
         year="2025"
