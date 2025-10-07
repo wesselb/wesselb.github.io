@@ -207,6 +207,13 @@ title:     "Publications"
 ## Talks
 <ul class="portfolio-list">
     {% include publication_entry.html
+        url="https://meetingorganizer.copernicus.org/EMS2025/EMS2025-541.html"
+        authors="Selz, T., Bruinsma, W., Craig, G. C., Markou, S., Turner, R. E., Vaughan, A."
+        year="2025"
+        title="On the Effective Resolution of AI Weather Prediction Models <span class=\"tag\">video</span>"
+        note="preprint"
+    %}
+    {% include publication_entry.html
         url="https://youtube.com/watch?v=SbLQsl13T7A"
         authors="Bruinsma, W. P."
         title="Aurora: A Foundation Model for the Earth System <span class=\"tag\">video</span>"
