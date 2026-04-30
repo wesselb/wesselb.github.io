@@ -17,10 +17,13 @@ title:     "About"
 
 Hey, 👋🏼!
 My name is Wessel.
-I am currently a Research Lead for the [The Alan Turing Institute](https://www.turing.ac.uk/).
+I am currently a Research Lead
+for the [Machine Learning Group at the University of Cambridge](https://mlg.eng.cam.ac.uk/).
 Our team's goal is to advance environmental forecasting with end-to-end machine learning.
 I am also a Quantative Researcher for [Cedalion Capital](https://cedalion.com/).
-Previously, I was a Senior Researcher on the [AI for Science initiative at Microsoft Research Amsterdam](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai-for-science/).
+Previously, I was
+a Research Lead for the [The Alan Turing Institute](https://www.turing.ac.uk/) and
+a Senior Researcher on the [AI for Science initiative at Microsoft Research Amsterdam](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai-for-science/).
 We developed [the Aurora model](https://www.nature.com/articles/s41586-025-09005-y) and [open sourced the model](https://github.com/microsoft/aurora) too.
 
 I hold a PhD in Machine from the University of Cambridge, supervised by [Dr Richard Turner](https://rich-turner-group.github.io/),
